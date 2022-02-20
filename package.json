@@ -18,7 +18,6 @@
     "start": "PORT=8765 react-scripts start",
     "build": "GENERATE_SOURCEMAP=false BUILD_PATH='./docs' react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx}'"
   },
   "eslintConfig": {
