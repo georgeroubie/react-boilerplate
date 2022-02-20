@@ -1,4 +1,4 @@
-# Required
+# Requirements
 - [Nodejs](https://nodejs.org/en/download)
 - [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
 - [VSCode](https://code.visualstudio.com/download)
