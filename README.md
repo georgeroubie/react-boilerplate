@@ -9,9 +9,9 @@
 3. Install the recommended VSCode extensions
 4. Open Terminal in the root folder and run `yarn`
 5. Change **title** and **description** here: `public/index.html`
-6. Change **short_name** and **name** here: `public/manifest.json`
-7. Change **name**, **homepage** here: `package.json`
-8. Change **port number** and build path here: `.env`
+6. Change **short name** and **name** here: `public/manifest.json`
+7. Change **name** and **homepage** here: `package.json`
+8. Change **port number** and **build path** here: `.env`
 9. Change these images:
 	- `public/logo192.png`
 	- `public/logo512.png`
