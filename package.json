@@ -1,12 +1,13 @@
 {
   "name": "react-app-headstart",
-	"homepage": "https://georgeroubie.github.io",
+  "homepage": "https://georgeroubie.github.io",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^3.2.3",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -27,18 +28,18 @@
       "react-app",
       "react-app/jest"
     ],
-		"plugins": [
-			"react"
-		],
-		"rules": {
-			"react/function-component-definition": [
-				2,
-				{
-					"namedComponents": "arrow-function",
-					"unnamedComponents": "arrow-function"
-				}
-			]
-		}
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "react/function-component-definition": [
+        2,
+        {
+          "namedComponents": "arrow-function",
+          "unnamedComponents": "arrow-function"
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
