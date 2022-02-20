@@ -1,6 +1,6 @@
 {
   "name": "react-app-headstart",
-	"homepage": "https://georgeroubie.github.io/react-app-headstart/",
+	"homepage": "https://georgeroubie.github.io",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -15,10 +15,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "PORT=8765 react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false BUILD_PATH='./docs' react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint 'src/**/*.{js,jsx}'"
+    "lint": "eslint 'src/**/*.{js,jsx}'",
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
