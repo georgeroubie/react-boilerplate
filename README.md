@@ -13,10 +13,10 @@
 7. Change **name** and **homepage** here: `package.json`
 8. Change **port number** and **build path** here: `.env`
 9. Change these images:
-	- `public/logo192.png`
-	- `public/logo512.png`
-	- `public/favicon.ico`
-	- `src/assets/img/logo.svg`
+  - `public/logo192.png`
+  - `public/logo512.png`
+  - `public/favicon.ico`
+  - `src/assets/img/logo.svg`
 10. Delete from `README.md` the installation steps from 5 to 10 and then commit the changes. Happy coding!
 
 # Commands
