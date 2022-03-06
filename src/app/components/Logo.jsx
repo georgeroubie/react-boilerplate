@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './../../assets/img/logo.svg';
 import styled from 'styled-components';
+import logo from './../../assets/img/logo.svg';
 
 const Image = styled.img`
   height: 40vmin;
