@@ -1,7 +1,11 @@
-import Header from './components/Header';
+import Menu from './routing/Menu';
+import Routing from './routing/Routing';
 
-const App = () => {
-  return <Header />;
-};
+const App = () => (
+  <>
+    <Menu />
+    <Routing />
+  </>
+);
 
 export default App;

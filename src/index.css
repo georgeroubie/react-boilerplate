@@ -3,10 +3,16 @@ body {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: #fff;
 }
 
 code {
   font-family: Consolas, monospace;
+}
+
+a {
+  color: #fff;
 }
 
 /* Animations */
