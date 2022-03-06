@@ -20,10 +20,10 @@ const NavLink = styled(_NavLink)`
 const Menu = () => (
   <Wrapper>
     <Logo />
-    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'none')}>
+    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : null)}>
       <code>Home</code>
     </NavLink>
-    <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'none')}>
+    <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : null)}>
       <code>About</code>
     </NavLink>
   </Wrapper>
