@@ -35,7 +35,17 @@
           "namedComponents": "arrow-function",
           "unnamedComponents": "arrow-function"
         }
-      ]
+      ],
+      "react/jsx-no-useless-fragment": "error",
+      "react/prefer-stateless-function": "error",
+      "react/no-array-index-key": "error",
+      "no-use-before-define": ["error", { "functions": false }],
+      "prefer-const": "error",
+      "no-var": "error",
+      "no-undef": "error",
+      "no-param-reassign": "error",
+      "no-shadow": "error",
+      "arrow-body-style": "error"
     }
   },
   "browserslist": {
