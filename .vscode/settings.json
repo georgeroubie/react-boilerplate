@@ -1,5 +1,6 @@
 {
   "prettier.configPath": ".prettierrc",
+  "prettier.ignorePath": ".prettierignore",
   "eslint.format.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
