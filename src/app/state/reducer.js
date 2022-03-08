@@ -12,4 +12,4 @@ const appReducer = (state, { type, value }) => {
   }
 };
 
-export default appReducer;
+export { appReducer };

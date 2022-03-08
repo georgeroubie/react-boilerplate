@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import useAppState from './store';
+import { useAppState } from './store';
 
 const AppContext = React.createContext();
 

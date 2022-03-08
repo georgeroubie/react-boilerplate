@@ -1,6 +1,6 @@
 import { useReducer } from 'react';
 import * as actionTypes from './actions';
-import appReducer from './reducer';
+import { appReducer } from './reducer';
 
 const useAppState = () => {
   const [state, dispatch] = useReducer(appReducer, {
@@ -21,4 +21,4 @@ const useAppState = () => {
   };
 };
 
-export default useAppState;
+export { useAppState };
