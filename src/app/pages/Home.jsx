@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import PageWrapper from '../components/PageWrapper';
-import { AppContext } from '../state/Cntext';
+import { AppContext } from '../state/Context';
 
 const Home = () => {
   const { state, setUserName } = useContext(AppContext);
