@@ -17,15 +17,20 @@ const NavLink = styled(_NavLink)`
   }
 `;
 
+const menuItems = [
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'About' },
+  { path: '/settings', label: 'Settings' },
+];
+
 const Menu = () => (
   <Wrapper>
     <Logo />
-    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : null)}>
-      <code>Home</code>
-    </NavLink>
-    <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : null)}>
-      <code>About</code>
-    </NavLink>
+    {menuItems.map(({ path, label }) => (
+      <NavLink key={path} to={path} className={({ isActive }) => (isActive ? 'active' : null)}>
+        <code>{label}</code>
+      </NavLink>
+    ))}
   </Wrapper>
 );
 

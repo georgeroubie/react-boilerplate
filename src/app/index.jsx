@@ -1,11 +1,14 @@
 import Menu from './routing/Menu';
 import Routing from './routing/Routing';
 import { AppProvider } from './state/Context';
+import Theme from './theme/Theme';
 
 const App = () => (
   <AppProvider>
-    <Menu />
-    <Routing />
+    <Theme>
+      <Menu />
+      <Routing />
+    </Theme>
   </AppProvider>
 );
 

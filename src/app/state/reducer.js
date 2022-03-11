@@ -7,6 +7,11 @@ const appReducer = (state, { type, value }) => {
         ...state,
         userName: value,
       };
+    case actionTypes.UPDATE_THEME_SELECTION:
+      return {
+        ...state,
+        theme: value,
+      };
     default:
       return state;
   }
