@@ -6,12 +6,12 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.3",
+    "styled-normalize": "^8.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,7 +39,12 @@
       "react/jsx-no-useless-fragment": "error",
       "react/prefer-stateless-function": "error",
       "react/no-array-index-key": "error",
-      "no-use-before-define": ["error", { "functions": false }],
+      "no-use-before-define": [
+        "error",
+        {
+          "functions": false
+        }
+      ],
       "prefer-const": "error",
       "no-var": "error",
       "no-undef": "error",
