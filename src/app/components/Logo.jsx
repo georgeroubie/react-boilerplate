@@ -2,14 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from './../../assets/img/logo.svg';
+import { setAnimation } from './../theme/styles/helpers';
 
 const Image = styled.img`
   height: 100px;
   cursor: pointer;
-
-  @media (prefers-reduced-motion: no-preference) {
-    animation: spin infinite 20s linear;
-  }
+  ${setAnimation('spin infinite 20s linear')};
 `;
 
 const Logo = () => {
