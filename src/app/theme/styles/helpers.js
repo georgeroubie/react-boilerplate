@@ -6,4 +6,10 @@ const setAnimation = (value) => css`
   }
 `;
 
-export { setAnimation };
+const setTransition = (value) => css`
+  @media (prefers-reduced-motion: no-preference) {
+    transition: ${value};
+  }
+`;
+
+export { setAnimation, setTransition };
