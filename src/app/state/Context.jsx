@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import { createContext } from 'react';
 import { useAppState } from './store';
 
-const AppContext = React.createContext();
+const AppContext = createContext();
 
 const AppProvider = ({ children }) => <AppContext.Provider value={useAppState()}>{children}</AppContext.Provider>;
 

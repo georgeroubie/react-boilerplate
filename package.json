@@ -39,12 +39,15 @@
       "react/jsx-no-useless-fragment": "error",
       "react/prefer-stateless-function": "error",
       "react/no-array-index-key": "error",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
       "no-use-before-define": [
         "error",
         {
           "functions": false
         }
       ],
+      "no-unused-vars": "error",
       "prefer-const": "error",
       "no-var": "error",
       "no-undef": "error",

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
 import { AppContext } from '../state/Context';

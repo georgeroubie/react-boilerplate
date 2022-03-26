@@ -1,15 +1,15 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <HashRouter>
       <App />
     </HashRouter>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById('root'),
 );
 
