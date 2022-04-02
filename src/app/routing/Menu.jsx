@@ -26,7 +26,7 @@ const Menu = () => (
   <Wrapper>
     <Logo />
     {menuItems.map(({ path, label }) => (
-      <NavLink key={path} to={path} className={({ isActive }) => (isActive ? 'active' : null)}>
+      <NavLink key={path} to={path}>
         <code>{label}</code>
       </NavLink>
     ))}
