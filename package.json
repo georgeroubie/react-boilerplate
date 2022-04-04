@@ -11,8 +11,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.5",
-    "styled-normalize": "^8.0.7",
-    "web-vitals": "^2.1.4"
+    "styled-normalize": "^8.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
