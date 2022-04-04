@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
