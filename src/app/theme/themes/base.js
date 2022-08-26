@@ -5,6 +5,13 @@ const baseTheme = {
     large: '1.5rem',
     xlarge: '2rem',
   },
+  fontSize: {
+    xsmall: '0.7rem',
+    small: '0.85rem',
+    normal: '1rem',
+    large: '1.5rem',
+    xlarge: '2rem',
+  },
 };
 
 export default baseTheme;
