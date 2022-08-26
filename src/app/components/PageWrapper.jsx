@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const Wrapper = styled.main`
   text-align: center;
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 0 30px;
+  max-width: 800px;
+  margin: ${({ theme: { spacing } }) => spacing.xlarge} auto;
+  padding: 0 ${({ theme: { spacing } }) => spacing.large};
 `;
 
 const PageWrapper = ({ children }) => <Wrapper>{children}</Wrapper>;

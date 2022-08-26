@@ -6,14 +6,8 @@ const typography = css`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
-    color: ${({ theme: { colors } }) => colors.textPrimary};
-  }
-
-  code {
-    font-family: Consolas, monospace;
-  }
-
-  a {
+    line-height: 1.4rem;
+    letter-spacing: 0.05rem;
     color: ${({ theme: { colors } }) => colors.textPrimary};
   }
 `;

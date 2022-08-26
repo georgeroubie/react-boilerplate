@@ -10,6 +10,7 @@ const Wrapper = styled.nav`
 
 const NavLink = styled(_NavLink)`
   text-decoration: none;
+  color: ${({ theme: { colors } }) => colors.textPrimary};
 
   &.active {
     text-decoration: underline;
@@ -27,7 +28,7 @@ const Menu = () => (
     <Logo />
     {menuItems.map(({ path, label }) => (
       <NavLink key={path} to={path}>
-        <code>{label}</code>
+        {label}
       </NavLink>
     ))}
   </Wrapper>
