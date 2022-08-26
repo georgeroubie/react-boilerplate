@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 import PageWrapper from '../components/PageWrapper';
+import Title from '../components/typography/Title';
 import { AppContext } from '../state/Context';
 import { DARK_THEME_KEY } from '../theme/themes/dark';
 import { LIGHT_THEME_KEY } from '../theme/themes/light';
@@ -12,7 +13,7 @@ const Selection = styled.div`
 `;
 
 const Checkbox = styled.input`
-  margin-right: 10px;
+  margin-right: ${({ theme: { spacing } }) => spacing.small};
   cursor: pointer;
 `;
 
@@ -31,7 +32,7 @@ const Settings = () => {
 
   return (
     <PageWrapper>
-      <h1>Settings</h1>
+      <Title>Settings</Title>
       <Selection>
         <Checkbox type="checkbox" id={id} name={id} checked={theme === DARK_THEME_KEY} onChange={handleOnChange} />
         <Label htmlFor={id}>Dark theme</Label>
