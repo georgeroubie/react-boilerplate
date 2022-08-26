@@ -1,6 +1,9 @@
+import baseTheme from './base';
+
 const LIGHT_THEME_KEY = 'light';
 
 const lightTheme = {
+  ...baseTheme,
   colors: {
     backgroundPrimary: '#ffffff',
     backgroundSecondary: '#dedede',
@@ -12,12 +15,6 @@ const lightTheme = {
     dangerBackgroundPrimary: '#ed2e2e',
     dangerTextPrimary: '#ffffff',
     dangerBackgroundSecondary: '#ea3d3d',
-  },
-  spacing: {
-    small: '8px',
-    normal: '15px',
-    large: '30px',
-    xlarge: '45px',
   },
 };
 
