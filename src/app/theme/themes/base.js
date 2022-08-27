@@ -12,6 +12,9 @@ const baseTheme = {
     large: '1.5rem',
     xlarge: '2rem',
   },
+  fontWeight: {
+    normal: 400,
+  },
 };
 
 export default baseTheme;
