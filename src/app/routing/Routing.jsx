@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Description from '../components/typography/Description';
 import Home from '../pages/home';
 
-// Lazy load components
+// Lazy load pages
 const About = lazy(() => import('../pages/about'));
 const Settings = lazy(() => import('../pages/settings'));
 const NotFound = lazy(() => import('../pages/not-found'));
