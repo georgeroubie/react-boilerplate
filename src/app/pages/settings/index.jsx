@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
-import PageWrapper from '../../components/PageWrapper';
+import PageWrapper from '../../components/layout/PageWrapper';
 import Title from '../../components/typography/Title';
 import { AppContext } from '../../state/Context';
 import { DARK_THEME_KEY } from '../../theme/themes/dark';

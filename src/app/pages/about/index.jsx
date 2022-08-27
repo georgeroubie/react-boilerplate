@@ -1,4 +1,4 @@
-import PageWrapper from '../../components/PageWrapper';
+import PageWrapper from '../../components/layout/PageWrapper';
 import Description from '../../components/typography/Description';
 import Title from '../../components/typography/Title';
 
