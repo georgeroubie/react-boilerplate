@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import Home from '../../app/pages/Home';
-import TestWrapper from '../Wrapper';
+import Home from '../../../app/pages/home';
+import TestWrapper from '../../Wrapper';
 
 test('renders title', () => {
   render(

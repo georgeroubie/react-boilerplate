@@ -1,12 +1,12 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Description from '../components/typography/Description';
-import Home from '../pages/Home';
+import Home from '../pages/home';
 
 // Lazy load components
-const About = lazy(() => import('../pages/About'));
-const Settings = lazy(() => import('../pages/Settings'));
-const NotFound = lazy(() => import('../pages/NotFound'));
+const About = lazy(() => import('../pages/about'));
+const Settings = lazy(() => import('../pages/settings'));
+const NotFound = lazy(() => import('../pages/not-found'));
 
 const Loader = ({ children }) => <Suspense fallback={<Description>Loading...</Description>}>{children}</Suspense>;
 

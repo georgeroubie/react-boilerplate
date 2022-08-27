@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
-import PageWrapper from '../components/PageWrapper';
-import Description from '../components/typography/Description';
-import Title from '../components/typography/Title';
-import { AppContext } from '../state/Context';
+import PageWrapper from '../../components/PageWrapper';
+import Description from '../../components/typography/Description';
+import Title from '../../components/typography/Title';
+import { AppContext } from '../../state/Context';
 
 const Input = styled.input``;
 

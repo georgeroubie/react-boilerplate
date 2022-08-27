@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
-import PageWrapper from '../components/PageWrapper';
-import Title from '../components/typography/Title';
-import { AppContext } from '../state/Context';
-import { DARK_THEME_KEY } from '../theme/themes/dark';
-import { LIGHT_THEME_KEY } from '../theme/themes/light';
+import PageWrapper from '../../components/PageWrapper';
+import Title from '../../components/typography/Title';
+import { AppContext } from '../../state/Context';
+import { DARK_THEME_KEY } from '../../theme/themes/dark';
+import { LIGHT_THEME_KEY } from '../../theme/themes/light';
 
 const Selection = styled.div`
   display: flex;
