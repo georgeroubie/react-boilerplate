@@ -3,8 +3,9 @@ import styled from 'styled-components';
 
 const Wrapper = styled.p`
   font-size: ${({ theme: { fontSize } }) => fontSize.normal};
-  margin: 0 0 ${({ theme: { spacing } }) => spacing.normal};
+  font-weight: ${({ theme: { fontWeight } }) => fontWeight.normal};
   line-height: ${({ theme: { lineHeight } }) => lineHeight.normal};
+  margin: 0 0 ${({ theme: { spacing } }) => spacing.normal};
 `;
 
 const Description = ({ children }) => <Wrapper>{children}</Wrapper>;
