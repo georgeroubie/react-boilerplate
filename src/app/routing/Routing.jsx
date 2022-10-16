@@ -1,14 +1,12 @@
-import { lazy, Suspense } from 'react';
+import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Description from '../components/typography/Description';
 import Home from '../pages/home';
+import RoutingLoader from './Loader';
 
 // Lazy load pages
 const About = lazy(() => import('../pages/about'));
 const Settings = lazy(() => import('../pages/settings'));
 const NotFound = lazy(() => import('../pages/not-found'));
-
-const Loader = ({ children }) => <Suspense fallback={<Description>Loading...</Description>}>{children}</Suspense>;
 
 const Routing = () => (
   <Routes>
@@ -16,25 +14,25 @@ const Routing = () => (
     <Route
       path="/about"
       element={
-        <Loader>
+        <RoutingLoader>
           <About />
-        </Loader>
+        </RoutingLoader>
       }
     />
     <Route
       path="/settings"
       element={
-        <Loader>
+        <RoutingLoader>
           <Settings />
-        </Loader>
+        </RoutingLoader>
       }
     />
     <Route
       path="*"
       element={
-        <Loader>
+        <RoutingLoader>
           <NotFound />
-        </Loader>
+        </RoutingLoader>
       }
     />
   </Routes>
