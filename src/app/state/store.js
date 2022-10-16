@@ -9,18 +9,18 @@ const useAppState = () => {
     theme: getCurrentTheme(),
   });
 
-  const setState = (type, value) => {
+  function setState(type, value) {
     dispatch({ type, value });
-  };
+  }
 
-  const setUserName = (value) => {
+  function setUserName(value) {
     setState(actionTypes.UPDATE_USER_NAME, value);
-  };
+  }
 
-  const setTheme = (value) => {
+  function setTheme(value) {
     saveThemeSelection(value);
     setState(actionTypes.UPDATE_THEME_SELECTION, value);
-  };
+  }
 
   return {
     state,
