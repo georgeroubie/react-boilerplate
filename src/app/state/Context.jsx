@@ -4,7 +4,9 @@ import { useAppState } from './store';
 
 const AppContext = createContext();
 
-const AppProvider = ({ children }) => <AppContext.Provider value={useAppState()}>{children}</AppContext.Provider>;
+const AppProvider = ({ children }) => {
+  return <AppContext.Provider value={useAppState()}>{children}</AppContext.Provider>;
+};
 
 AppProvider.propTypes = {
   children: PropTypes.node.isRequired,
