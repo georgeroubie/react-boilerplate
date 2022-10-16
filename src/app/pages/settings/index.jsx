@@ -26,9 +26,9 @@ const Settings = () => {
   const { theme } = state;
   const id = 'theme_selection';
 
-  const handleOnChange = ({ target }) => {
+  function handleOnChange({ target }) {
     setTheme(target.checked ? DARK_THEME_KEY : LIGHT_THEME_KEY);
-  };
+  }
 
   return (
     <PageWrapper>
