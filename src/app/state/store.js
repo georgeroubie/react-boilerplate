@@ -3,7 +3,7 @@ import { getCurrentTheme, saveThemeSelection } from '../theme/themes/helpers';
 import * as actionTypes from './actions';
 import { appReducer } from './reducer';
 
-const useAppState = () => {
+function useAppState() {
   const [state, dispatch] = useReducer(appReducer, {
     userName: 'friend',
     theme: getCurrentTheme(),
@@ -27,6 +27,6 @@ const useAppState = () => {
     setTheme,
     setUserName,
   };
-};
+}
 
 export { useAppState };
