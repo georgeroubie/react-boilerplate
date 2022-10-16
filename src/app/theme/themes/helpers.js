@@ -3,9 +3,11 @@ import { LIGHT_THEME_KEY } from './light';
 
 const SAVED_THEME_KEY = 'user_selected_theme';
 
-const saveThemeSelection = (theme) => localStorage.setItem(SAVED_THEME_KEY, theme);
+function saveThemeSelection(theme) {
+  localStorage.setItem(SAVED_THEME_KEY, theme);
+}
 
-const getCurrentTheme = () => {
+function getCurrentTheme() {
   const savedTheme = localStorage.getItem(SAVED_THEME_KEY);
   if (savedTheme) {
     return savedTheme;
@@ -17,6 +19,6 @@ const getCurrentTheme = () => {
     }
   }
   return DARK_THEME_KEY;
-};
+}
 
 export { getCurrentTheme, saveThemeSelection };
