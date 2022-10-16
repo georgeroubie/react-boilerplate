@@ -8,34 +8,36 @@ const About = lazy(() => import('../pages/about'));
 const Settings = lazy(() => import('../pages/settings'));
 const NotFound = lazy(() => import('../pages/not-found'));
 
-const Routing = () => (
-  <Routes>
-    <Route path="/" element={<Home />} />
-    <Route
-      path="/about"
-      element={
-        <RoutingLoader>
-          <About />
-        </RoutingLoader>
-      }
-    />
-    <Route
-      path="/settings"
-      element={
-        <RoutingLoader>
-          <Settings />
-        </RoutingLoader>
-      }
-    />
-    <Route
-      path="*"
-      element={
-        <RoutingLoader>
-          <NotFound />
-        </RoutingLoader>
-      }
-    />
-  </Routes>
-);
+const Routing = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route
+        path="/about"
+        element={
+          <RoutingLoader>
+            <About />
+          </RoutingLoader>
+        }
+      />
+      <Route
+        path="/settings"
+        element={
+          <RoutingLoader>
+            <Settings />
+          </RoutingLoader>
+        }
+      />
+      <Route
+        path="*"
+        element={
+          <RoutingLoader>
+            <NotFound />
+          </RoutingLoader>
+        }
+      />
+    </Routes>
+  );
+};
 
 export default Routing;
