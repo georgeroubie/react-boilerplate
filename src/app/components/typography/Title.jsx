@@ -8,7 +8,9 @@ const Wrapper = styled.h1`
   margin: 0 0 ${({ theme: { spacing } }) => spacing.large};
 `;
 
-const Title = ({ children }) => <Wrapper>{children}</Wrapper>;
+const Title = ({ children }) => {
+  return <Wrapper>{children}</Wrapper>;
+};
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,
