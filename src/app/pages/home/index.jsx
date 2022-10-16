@@ -11,9 +11,9 @@ const Home = () => {
   const { state, setUserName } = useContext(AppContext);
   const { userName } = state;
 
-  const handleOnChange = ({ target }) => {
+  function handleOnChange({ target }) {
     setUserName(target.value);
-  };
+  }
 
   return (
     <PageWrapper>
