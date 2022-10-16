@@ -4,13 +4,13 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.3.0",
+    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.6",
     "styled-normalize": "^8.0.7"
   },
   "scripts": {
@@ -51,8 +51,7 @@
       "no-var": "error",
       "no-undef": "error",
       "no-param-reassign": "error",
-      "no-shadow": "error",
-      "arrow-body-style": "error"
+      "no-shadow": "error"
     }
   },
   "browserslist": {
