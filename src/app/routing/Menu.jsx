@@ -23,15 +23,17 @@ const menuItems = [
   { path: '/settings', label: 'Settings' },
 ];
 
-const Menu = () => (
-  <Wrapper>
-    <Logo />
-    {menuItems.map(({ path, label }) => (
-      <NavLink key={path} to={path}>
-        {label}
-      </NavLink>
-    ))}
-  </Wrapper>
-);
+const Menu = () => {
+  return (
+    <Wrapper>
+      <Logo />
+      {menuItems.map(({ path, label }) => (
+        <NavLink key={path} to={path}>
+          {label}
+        </NavLink>
+      ))}
+    </Wrapper>
+  );
+};
 
 export default Menu;
