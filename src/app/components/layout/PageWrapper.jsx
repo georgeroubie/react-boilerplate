@@ -8,7 +8,9 @@ const Wrapper = styled.main`
   padding: 0 ${({ theme: { spacing } }) => spacing.large};
 `;
 
-const PageWrapper = ({ children }) => <Wrapper>{children}</Wrapper>;
+const PageWrapper = ({ children }) => {
+  return <Wrapper>{children}</Wrapper>;
+};
 
 PageWrapper.propTypes = {
   children: PropTypes.node.isRequired,
