@@ -28,7 +28,7 @@ const Menu = () => {
     <Wrapper>
       <Logo />
       {menuItems.map(({ path, label }) => (
-        <NavLink key={path} to={path}>
+        <NavLink key={path} to={path} end>
           {label}
         </NavLink>
       ))}
