@@ -11,6 +11,7 @@ const Image = styled.img`
 
 const Logo = () => {
   const navigate = useNavigate();
+
   return <Image src={logo} alt="logo" onClick={() => navigate('/')} />;
 };
 
