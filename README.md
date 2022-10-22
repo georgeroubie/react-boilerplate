@@ -20,7 +20,7 @@
 2. Rename project folder
 3. Open project folder with VSCode 
 5. Change **title** and **description** here: `public/index.html`
-6. Change **short name** and **name** here: `public/manifest.json`
+6. Change **short name**, **name** and **version** here: `public/manifest.json`
 7. Change **name** and **version** here: `package.json`
 8. Change **port number** and **public url** here: `.env`
 9. Change these images:
