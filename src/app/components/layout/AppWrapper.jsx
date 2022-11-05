@@ -23,8 +23,9 @@ const AppWrapper = ({ children }) => {
 
   useEffect(() => {
     function changeHeightValue() {
-      if (getHeight() !== height) {
-        setHeight(getHeight());
+      const currentHeight = getHeight();
+      if (height !== currentHeight) {
+        setHeight(currentHeight);
       }
     }
 
