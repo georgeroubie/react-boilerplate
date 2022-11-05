@@ -18,14 +18,13 @@
 # How to use it for your own projects
 1. Download project
 2. Rename project folder
-3. Open project folder with VSCode 
-5. Change **title** and **description** here: `public/index.html`
-6. Change **short name**, **name** and **version** here: `public/manifest.json`
-7. Change **name** and **version** here: `package.json`
-8. Change **port number** and **public url** here: `.env`
-9. Change these images:
+3. Open project folder with VSCode
+4. Change **short name**, **name** and **version** here: `public/manifest.json`
+5. Change **name** and **version** here: `package.json`
+6. Change **port number**, **public url**, **title** and **description** here: `.env`
+7. Change these images:
   - `public/logo192.png`
   - `public/logo512.png`
   - `public/favicon.ico`
   - `src/assets/img/logo.svg`
-10. Delete this section and then commit the changes. **Happy coding!**
+8. Delete this section and then commit the changes. **Happy coding!**
