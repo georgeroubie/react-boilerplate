@@ -37,7 +37,7 @@
       ],
       "react/jsx-no-useless-fragment": "error",
       "react/prefer-stateless-function": "error",
-      "react/no-array-index-key": "error",
+      "react/no-array-index-key": "off",
       "react/jsx-uses-react": "off",
       "react/react-in-jsx-scope": "off",
       "no-use-before-define": [
