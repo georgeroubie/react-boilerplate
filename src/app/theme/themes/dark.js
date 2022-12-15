@@ -2,20 +2,59 @@ import baseTheme from './base';
 
 const DARK_THEME_KEY = 'dark';
 
-const darkTheme = {
-  ...baseTheme,
-  colors: {
-    backgroundPrimary: '#212121',
-    backgroundSecondary: '#171717',
-    borderPrimary: '#000000',
-    textPrimary: '#dfdfdf',
-    successBackgroundPrimary: '#00bc8b',
-    warningBackgroundPrimary: '#ffc200',
-    warningTextPrimary: '#000000',
-    dangerBackgroundPrimary: '#ff606A',
-    dangerTextPrimary: '#dfdfdf',
-    dangerBackgroundSecondary: '#fa747c',
-  },
+const darkThemeColorValues = {
+  blue: '#4cc0f0',
+  blueLight: '#e1f2ff',
+
+  green: '#00bc8b',
+  greenLight: '#edf7ee',
+
+  yellow: '#ffc200',
+  yellowLight: '#fffcdc',
+
+  red: '#ff606A',
+  redLight: '#fff5f3',
+
+  black: '#171717',
+  blackLight: '#212121',
+  blackLightest: '#353535',
+
+  grey: '#9b9b9b',
+  greyLighter: '#dfdfdf',
 };
 
-export { darkTheme, DARK_THEME_KEY };
+const colors = {
+  background: darkThemeColorValues.black,
+  backgroundSecondary: darkThemeColorValues.greyLighter,
+  surface: darkThemeColorValues.blackLight,
+  surfaceSecondary: darkThemeColorValues.greyLighter,
+  successPrimary: darkThemeColorValues.green,
+  successSecondary: darkThemeColorValues.greenLight,
+  warningPrimary: darkThemeColorValues.yellow,
+  warningSecondary: darkThemeColorValues.yellowLight,
+  errorPrimary: darkThemeColorValues.red,
+  errorSecondary: darkThemeColorValues.redLight,
+  buttonPrimary: darkThemeColorValues.green,
+  buttonPrimaryText: darkThemeColorValues.black,
+  buttonSecondary: darkThemeColorValues.blackLightest,
+  buttonSecondaryText: darkThemeColorValues.greyLighter,
+  buttonOutline: darkThemeColorValues.black,
+  buttonOutlineText: darkThemeColorValues.black,
+  buttonOutlineSecondary: darkThemeColorValues.black,
+  buttonOutlineSecondaryText: darkThemeColorValues.black,
+  textPrimary: darkThemeColorValues.greyLighter,
+  textSecondary: darkThemeColorValues.grey,
+  textDisabled: darkThemeColorValues.blackLightest,
+  borderPrimary: darkThemeColorValues.greyLighter,
+  borderSecondary: darkThemeColorValues.grey,
+  outline: darkThemeColorValues.greyLighter,
+  backdrop: darkThemeColorValues.black,
+  dividerPrimary: darkThemeColorValues.greyLighter,
+};
+
+const darkTheme = {
+  ...baseTheme,
+  colors,
+};
+
+export { darkTheme, DARK_THEME_KEY, darkThemeColorValues };
