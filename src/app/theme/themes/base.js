@@ -1,9 +1,10 @@
 const baseTheme = {
   spacing: {
-    small: '0.85rem',
-    normal: '1rem',
-    large: '1.5rem',
-    xlarge: '2rem',
+    xsmall: '0.125rem',
+    small: '0.25rem',
+    normal: '0.5rem',
+    large: '1rem',
+    xlarge: '1.5rem',
   },
   fontSize: {
     xsmall: '0.7rem',
@@ -30,6 +31,11 @@ const baseTheme = {
     extraBold: 800,
     black: 900,
     extraBlack: 950,
+  },
+  shapes: {
+    rectangle: '0px',
+    rounded: '8px',
+    circle: '50%',
   },
 };
 
