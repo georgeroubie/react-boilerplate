@@ -4,7 +4,7 @@ import { setAnimation } from '../../theme/styles/helpers';
 import logo from './../../../assets/img/logo.svg';
 
 const Image = styled.img`
-  height: 100px;
+  width: 60px;
   cursor: pointer;
   ${setAnimation('spin infinite 20s linear')};
 `;
