@@ -5,7 +5,9 @@ import Logo from '../components/ui/Logo';
 const Wrapper = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: ${({ theme: { spacing } }) => spacing.large} 0;
+  gap: ${({ theme: { spacing } }) => spacing.normal};
 `;
 
 const NavLink = styled(_NavLink)`
