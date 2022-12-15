@@ -1,17 +1,14 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-const Wrapper = styled.main`
-  width: 100vw;
+const Wrapper = styled.div`
+  max-width: 990px;
   height: 100vh;
   overflow: hidden auto;
-  background-color: ${({ theme: { colors } }) => colors.backgroundPrimary};
-  ${({ $height }) =>
-    $height &&
-    css`
-      height: ${$height};
-    `};
+  margin: 0 auto;
+  padding: 0 ${({ theme: { spacing } }) => spacing.large};
+  background-color: ${({ theme: { colors } }) => colors.surface};
 `;
 
 function getHeight() {
@@ -35,7 +32,7 @@ const AppWrapper = ({ children }) => {
     };
   }, [height]);
 
-  return <Wrapper $height={height}>{children}</Wrapper>;
+  return <Wrapper style={{ height }}>{children}</Wrapper>;
 };
 
 AppWrapper.propTypes = {
