@@ -2,6 +2,7 @@ import PageWrapper from '../../components/layout/PageWrapper';
 import Description from '../../components/typography/Description';
 import Title from '../../components/typography/Title';
 import ButtonPresentation from './ButtonPresentation';
+import IconsPresentation from './IconsPresentation';
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
         accident, sometimes on purpose (injected humour and the like).
       </Description>
       <ButtonPresentation />
+      <IconsPresentation />
     </PageWrapper>
   );
 };
