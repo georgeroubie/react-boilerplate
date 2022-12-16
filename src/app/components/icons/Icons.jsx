@@ -52,13 +52,12 @@ const Icons = ({ type, ...iconProps }) => {
 Icons.propTypes = {
   className: PropTypes.string,
   type: PropTypes.string.isRequired,
-  viewBox: PropTypes.string.isRequired,
   width: PropTypes.string,
   height: PropTypes.string,
 };
 
 Icons.defaultProps = {
-  className: null,
+  className: '',
   width: '100%',
   height: '100%',
 };
