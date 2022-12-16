@@ -18,11 +18,15 @@ const IconGenerator = ({ className, viewBox, width, height, children }) => {
 };
 
 IconGenerator.propTypes = {
-  className: PropTypes.string.isRequired,
+  className: PropTypes.string,
   viewBox: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+};
+
+IconGenerator.defaultProps = {
+  className: '',
 };
 
 export default IconGenerator;
