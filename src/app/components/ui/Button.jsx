@@ -94,7 +94,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  className: null,
+  className: '',
   type: 'button',
   variation: 'primary',
   size: 'normal',
