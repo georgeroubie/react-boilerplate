@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   margin: ${({ theme: { spacing } }) => spacing.xlarge} auto;
-  height: 2px;
+  height: ${({ theme: { shapes } }) => shapes.divider};
   background-color: ${({ theme: { colors } }) => colors.dividerPrimary};
 `;
 
