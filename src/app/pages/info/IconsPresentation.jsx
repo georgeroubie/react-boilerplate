@@ -11,7 +11,7 @@ const Controls = styled.div`
 `;
 
 const IconsPresentation = () => {
-  const [iconType, setIconType] = useState('AngleDown');
+  const [iconType, setIconType] = useState('Heart');
 
   const iconsOptions = Object.keys(iconList).map((type) => {
     return {
