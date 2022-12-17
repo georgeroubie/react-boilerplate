@@ -36,6 +36,7 @@ const baseTheme = {
     rectangle: '0px',
     rounded: '8px',
     circle: '50%',
+    divider: '0.125rem',
   },
 };
 
