@@ -23,13 +23,15 @@ const Home = () => {
         are:
       </Description>
       <List>
+        <ListItem>Folder structure based on some best practices</ListItem>
         <ListItem>State management with React Context</ListItem>
         <ListItem>Styled components</ListItem>
         <ListItem>Light/Dark Theme</ListItem>
-        <ListItem>React Routing</ListItem>
-        <ListItem>Icons</ListItem>
+        <ListItem>Routing with React Router</ListItem>
+        <ListItem>Basic Icons</ListItem>
         <ListItem>Basic UI Components</ListItem>
         <ListItem>ESLint</ListItem>
+        <ListItem>Prettier</ListItem>
         <ListItem>Testing</ListItem>
       </List>
       <Subtitle>Creator</Subtitle>
