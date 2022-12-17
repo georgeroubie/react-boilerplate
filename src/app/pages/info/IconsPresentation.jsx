@@ -7,7 +7,7 @@ const IconsPresentation = () => {
 
   return (
     <>
-      <Subtitle>{'<Icons />'}</Subtitle>
+      <Subtitle>Available icons</Subtitle>
       <label htmlFor="icon-type">Icon type:</label>
       <select name="icon-type" id="icon-type" value={iconType} onChange={({ target }) => setIconType(target.value)}>
         {Object.keys(iconList).map((type, index) => (
