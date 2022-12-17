@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   margin: ${({ theme: { spacing } }) => spacing.xlarge} auto;
-  border: 2px solid ${({ theme: { colors } }) => colors.borderPrimary};
+  height: 2px;
+  background-color: ${({ theme: { colors } }) => colors.dividerPrimary};
 `;
 
 const Divider = () => {
