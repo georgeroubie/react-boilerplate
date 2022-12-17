@@ -8,7 +8,7 @@ import IconsPresentation from './IconsPresentation';
 const Info = () => {
   return (
     <PageWrapper>
-      <Title>Available components</Title>
+      <Title>Info</Title>
       <ButtonPresentation />
       <Divider />
       <IconsPresentation />
