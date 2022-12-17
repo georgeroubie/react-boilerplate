@@ -5,7 +5,7 @@ const Wrapper = styled.p`
   font-size: ${({ theme: { fontSize } }) => fontSize.normal};
   font-weight: ${({ theme: { fontWeight } }) => fontWeight.normal};
   line-height: ${({ theme: { lineHeight } }) => lineHeight.normal};
-  margin: 0 0 ${({ theme: { spacing } }) => spacing.normal};
+  margin: 0 0 ${({ theme: { spacing } }) => spacing.large};
 `;
 
 const Description = ({ children }) => {
