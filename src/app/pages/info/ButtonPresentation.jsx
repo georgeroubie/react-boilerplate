@@ -3,11 +3,12 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Subtitle from '../../components/typography/Subtitle';
 import Button from '../../components/ui/Button';
+import SelectInput from '../../components/ui/SelectInput';
 
 const Controls = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: ${({ theme: { spacing } }) => spacing.normal};
+  gap: ${({ theme: { spacing } }) => spacing.large};
   margin-bottom: ${({ theme: { spacing } }) => spacing.large};
 `;
 
@@ -17,37 +18,65 @@ const ButtonPresentation = () => {
   const [disabled, setDisabled] = useState('no');
   const [isLoading, setIsLoading] = useState('no');
 
+  const sizeOptions = [
+    {
+      value: 'small',
+      label: 'Small',
+    },
+    {
+      value: 'normal',
+      label: 'Normal',
+    },
+    {
+      value: 'large',
+      label: 'Large',
+    },
+  ];
+
+  const booleanOptions = [
+    {
+      value: 'no',
+      label: 'No',
+    },
+    {
+      value: 'yes',
+      label: 'Yes',
+    },
+  ];
+
+  const variationOptions = [
+    {
+      value: 'primary',
+      label: 'Primary',
+    },
+    {
+      value: 'secondary',
+      label: 'Secondary',
+    },
+  ];
+
   return (
     <>
       <Subtitle>Button component</Subtitle>
       <Controls>
-        <label htmlFor="size">Size:</label>
-        <select name="size" id="size" value={size} onChange={({ target }) => setSize(target.value)}>
-          <option value="small">small</option>
-          <option value="normal">normal</option>
-          <option value="large">large</option>
-        </select>
+        <SelectInput id="size" selectedValue={size} options={sizeOptions} onChange={setSize}>
+          Size:
+        </SelectInput>
 
-        <label htmlFor="size">Disabled:</label>
-        <select name="disabled" id="disabled" value={disabled} onChange={({ target }) => setDisabled(target.value)}>
-          <option value="no">no</option>
-          <option value="yes">yes</option>
-        </select>
+        <SelectInput id="disabled" selectedValue={disabled} options={booleanOptions} onChange={setDisabled}>
+          Disabled:
+        </SelectInput>
 
-        <label htmlFor="size">Variation:</label>
-        <select name="variation" id="variation" value={variation} onChange={({ target }) => setVariation(target.value)}>
-          <option value="primary">primary</option>
-          <option value="secondary">secondary</option>
-        </select>
+        <SelectInput id="variation" selectedValue={variation} options={variationOptions} onChange={setVariation}>
+          Variation:
+        </SelectInput>
 
-        <label htmlFor="loading">Loading:</label>
-        <select name="loading" id="loading" value={isLoading} onChange={({ target }) => setIsLoading(target.value)}>
-          <option value="no">no</option>
-          <option value="yes">yes</option>
-        </select>
+        <SelectInput id="loading" selectedValue={isLoading} options={booleanOptions} onChange={setIsLoading}>
+          Loading:
+        </SelectInput>
       </Controls>
       <Button size={size} variation={variation} disabled={disabled === 'yes'} isLoading={isLoading === 'yes'}>
-        This is the button children
+        I am a button
       </Button>
     </>
   );
