@@ -21,9 +21,9 @@ const Wrapper = styled.button`
   min-width: 0;
   border: 0;
   user-select: none;
-  ${setTransition('color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out')}
   color: ${({ theme: { colors } }) => colors.buttonPrimaryText};
   background-color: ${({ theme: { colors } }) => colors.buttonPrimary};
+  ${setTransition('color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out')}
 
   &:hover {
     text-decoration: none;
