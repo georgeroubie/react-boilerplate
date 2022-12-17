@@ -2,12 +2,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Wrapper = styled.a`
-  text-decoration: none;
+  text-decoration: underline;
   color: ${({ theme: { colors } }) => colors.textPrimary};
-
-  &:hover {
-    text-decoration: underline;
-  }
+  font-size: ${({ theme: { fontSize } }) => fontSize.normal};
+  font-weight: ${({ theme: { fontWeight } }) => fontWeight.normal};
+  line-height: ${({ theme: { lineHeight } }) => lineHeight.normal};
 `;
 
 const Hyperlink = ({ className, href, target, rel, children }) => {
