@@ -1,20 +1,25 @@
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { setTransition } from '../../theme/styles/helpers';
+import { setAnimation, setTransition } from '../../theme/styles/helpers';
 import { darken } from '../../utilities/colors';
+import _Icons from '../icons/Icons';
+
+const Icons = styled(_Icons)`
+  width: ${({ theme: { fontSize } }) => fontSize.large};
+`;
 
 const Wrapper = styled.button`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: ${({ theme: { fontSize } }) => fontSize.normal};
   line-height: ${({ theme: { lineHeight } }) => lineHeight.normal};
   font-weight: ${({ theme: { fontWeight } }) => fontWeight.bold};
   padding: ${({ theme: { spacing } }) => spacing.normal};
   border-radius: ${({ theme: { shapes } }) => shapes.rounded};
   width: 100%;
+  min-width: 0;
   border: 0;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
   user-select: none;
   ${setTransition('color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out')}
   color: ${({ theme: { colors } }) => colors.buttonPrimaryText};
@@ -65,6 +70,20 @@ const Wrapper = styled.button`
         background-color: ${({ theme: { colors } }) => darken(colors.buttonSecondary, 10)};
       }
     `}
+
+  ${({ $isLoading }) =>
+    $isLoading &&
+    css`
+      ${Icons} {
+        ${setAnimation('spin infinite 3s linear')};
+      }
+    `}
+`;
+
+const Label = styled.span`
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 `;
 
 const Button = ({ className, type, variation, disabled, size, isLoading, children, onClick }) => {
@@ -73,11 +92,12 @@ const Button = ({ className, type, variation, disabled, size, isLoading, childre
       className={className}
       type={type}
       $variation={variation}
+      $isLoading={isLoading}
       $size={size}
       disabled={disabled}
       onClick={onClick}
     >
-      {children}
+      {isLoading ? <Icons type="Spinner" /> : <Label>{children}</Label>}
     </Wrapper>
   );
 };
