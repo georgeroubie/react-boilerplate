@@ -23,9 +23,8 @@ const LabelContainer = styled.label`
 const Icon = styled.div`
   display: flex;
   align-items: center;
-  padding: ${({ theme: { spacing } }) => spacing.xsmall};
+  padding: ${({ theme: { spacing } }) => spacing.small};
   border-radius: ${({ theme: { spacing } }) => spacing.xsmall};
-  border: 2px solid ${({ theme: { colors } }) => colors.borderPrimary};
   width: ${({ theme: { fontSize } }) => fontSize.large};
   height: ${({ theme: { fontSize } }) => fontSize.large};
 
@@ -40,13 +39,11 @@ const Input = styled.input.attrs({ type: 'checkbox' })`
   &:checked + div {
     color: ${({ theme: { colors } }) => colors.surface};
     background-color: ${({ theme: { colors } }) => colors.successPrimary};
-    border-color: ${({ theme: { colors } }) => colors.successPrimary};
   }
 
   &:not(:checked) + div {
     color: ${({ theme: { colors } }) => colors.textSecondary};
     background-color: ${({ theme: { colors } }) => colors.background};
-    border-color: ${({ theme: { colors } }) => colors.background};
   }
 
   &:disabled {
