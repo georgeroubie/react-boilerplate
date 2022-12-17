@@ -1,28 +1,37 @@
+import styled from 'styled-components';
 import PageWrapper from '../../components/layout/PageWrapper';
 import Description from '../../components/typography/Description';
 import Hyperlink from '../../components/typography/Hyperlink';
 import Subtitle from '../../components/typography/Subtitle';
 import Title from '../../components/typography/Title';
 
+const List = styled.ul`
+  margin: ${({ theme: { spacing } }) => `0 0 ${spacing.large}`};
+  padding-left: ${({ theme: { spacing } }) => spacing.large};
+  list-style: square;
+`;
+
+const ListItem = styled.li``;
+
 const Home = () => {
   return (
     <PageWrapper>
-      <Title>Welcome</Title>
+      <Title>React boilerplate</Title>
       <Subtitle>About</Subtitle>
       <Description>
         This is the React boilerplate that I use in every React project as a starting point. Some of the basic features
         are:
-        <ul>
-          <li>State management with React Context</li>
-          <li>Styled components</li>
-          <li>Light/Dark Theme</li>
-          <li>React Routing</li>
-          <li>Icons</li>
-          <li>Basic UI Components</li>
-          <li>ESLint</li>
-          <li>Testing</li>
-        </ul>
       </Description>
+      <List>
+        <ListItem>State management with React Context</ListItem>
+        <ListItem>Styled components</ListItem>
+        <ListItem>Light/Dark Theme</ListItem>
+        <ListItem>React Routing</ListItem>
+        <ListItem>Icons</ListItem>
+        <ListItem>Basic UI Components</ListItem>
+        <ListItem>ESLint</ListItem>
+        <ListItem>Testing</ListItem>
+      </List>
       <Subtitle>Creator</Subtitle>
       <Description>
         My name is George Roubie and you can follow me on&nbsp;
