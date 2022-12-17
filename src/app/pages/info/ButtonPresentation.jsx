@@ -19,7 +19,7 @@ const ButtonPresentation = () => {
 
   return (
     <>
-      <Subtitle>{'<Button />'}</Subtitle>
+      <Subtitle>Button component</Subtitle>
       <Controls>
         <label htmlFor="size">Size:</label>
         <select name="size" id="size" value={size} onChange={({ target }) => setSize(target.value)}>
