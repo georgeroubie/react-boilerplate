@@ -21,7 +21,7 @@ const NavLink = styled(_NavLink)`
 
 const menuItems = [
   { path: '/', label: 'Home' },
-  { path: '/about', label: 'About' },
+  { path: '/info', label: 'Info' },
   { path: '/settings', label: 'Settings' },
 ];
 
