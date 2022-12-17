@@ -9,6 +9,7 @@ import Comments from './Comments';
 import Envelope from './Envelope';
 import Gear from './Gear';
 import Heart from './Heart';
+import Home from './Home';
 import Info from './Info';
 import Magnifier from './Magnifier';
 import Minus from './Minus';
@@ -30,6 +31,7 @@ export const iconList = {
   Envelope,
   Gear,
   Heart,
+  Home,
   Info,
   Magnifier,
   Minus,
