@@ -19,7 +19,7 @@ const CheckboxPresentation = () => {
 
   return (
     <>
-      <Subtitle>{'<Checkbox />'}</Subtitle>
+      <Subtitle>Checkbox component</Subtitle>
       <Checkbox label={label} checked={checked} onChange={setChecked} />
       <Checkbox label="I am disabled and not checked" checked={false} disabled />
       <Checkbox label="I am disabled and checked" checked disabled />
