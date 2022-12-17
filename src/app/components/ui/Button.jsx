@@ -75,7 +75,7 @@ const Wrapper = styled.button`
     $isLoading &&
     css`
       ${Icons} {
-        ${setAnimation('spin infinite 3s linear')};
+        ${setAnimation('spin infinite 2s linear')};
       }
     `}
 `;
