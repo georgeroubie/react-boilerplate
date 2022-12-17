@@ -5,16 +5,11 @@ import { appReducer } from './reducer';
 
 function useAppState() {
   const [state, dispatch] = useReducer(appReducer, {
-    userName: 'friend',
     theme: getCurrentTheme(),
   });
 
   function setState(type, value) {
     dispatch({ type, value });
-  }
-
-  function setUserName(value) {
-    setState(actionTypes.UPDATE_USER_NAME, value);
   }
 
   function setTheme(value) {
@@ -25,7 +20,6 @@ function useAppState() {
   return {
     state,
     setTheme,
-    setUserName,
   };
 }
 
