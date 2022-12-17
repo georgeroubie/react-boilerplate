@@ -1,23 +1,34 @@
 import { useState } from 'react';
+import styled from 'styled-components';
 import Icons, { iconList } from '../../components/icons/Icons';
 import Subtitle from '../../components/typography/Subtitle';
+import SelectInput from '../../components/ui/SelectInput';
+
+const Controls = styled.div`
+  display: flex;
+  align-items: center;
+  gap: ${({ theme: { spacing } }) => spacing.large};
+`;
 
 const IconsPresentation = () => {
   const [iconType, setIconType] = useState('AngleDown');
 
+  const iconsOptions = Object.keys(iconList).map((type) => {
+    return {
+      value: type,
+      label: type,
+    };
+  });
+
   return (
     <>
       <Subtitle>Available icons</Subtitle>
-      <label htmlFor="icon-type">Icon type:</label>
-      <select name="icon-type" id="icon-type" value={iconType} onChange={({ target }) => setIconType(target.value)}>
-        {Object.keys(iconList).map((type, index) => (
-          <option value={type} key={`${type}_${index}`}>
-            {type}
-          </option>
-        ))}
-      </select>
-      <br /> <br />
-      <Icons width="40px" height="40px" type={iconType} />
+      <Controls>
+        <SelectInput id="icon-type" selectedValue={iconType} options={iconsOptions} onChange={setIconType}>
+          Icon type:
+        </SelectInput>
+        <Icons width="32px" height="32px" type={iconType} />
+      </Controls>
     </>
   );
 };
