@@ -14,11 +14,11 @@ const baseTheme = {
     xlarge: '2rem',
   },
   lineHeight: {
-    xsmall: '1rem',
-    small: '1.3rem',
-    normal: '1.5rem',
-    large: '2.3rem',
-    xlarge: '3rem',
+    xsmall: '0.85rem',
+    small: '1rem',
+    normal: '1.2rem',
+    large: '1.8rem',
+    xlarge: '2.4rem',
   },
   fontWeight: {
     thin: 100,
