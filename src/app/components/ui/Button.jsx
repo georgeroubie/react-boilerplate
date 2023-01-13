@@ -5,7 +5,7 @@ import { darken } from '../../utilities/colors';
 import _Icons from '../icons/Icons';
 
 const Icons = styled(_Icons)`
-  width: ${({ theme: { fontSize } }) => fontSize.large};
+  width: ${({ theme: { lineHeight } }) => lineHeight.normal};
 `;
 
 const Wrapper = styled.button`
