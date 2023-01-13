@@ -8,7 +8,7 @@ const Checkbox = styled(_Checkbox)`
 `;
 
 const CheckboxPresentation = () => {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(true);
 
   const label = useMemo(() => {
     if (checked) {
