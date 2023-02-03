@@ -4,6 +4,7 @@ import Divider from '../../components/ui/Divider';
 import ButtonPresentation from './ButtonPresentation';
 import CheckboxPresentation from './CheckboxPresentation';
 import IconsPresentation from './IconsPresentation';
+import InputPresentation from './InputPresentation';
 
 const Info = () => {
   return (
@@ -14,6 +15,8 @@ const Info = () => {
       <IconsPresentation />
       <Divider />
       <CheckboxPresentation />
+      <Divider />
+      <InputPresentation />
       <Divider />
     </PageWrapper>
   );
