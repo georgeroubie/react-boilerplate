@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Wrapper = styled.a`
+  display: inline-block;
   text-decoration: underline;
   color: ${({ theme: { colors } }) => colors.textPrimary};
   font-size: ${({ theme: { fontSize } }) => fontSize.normal};
