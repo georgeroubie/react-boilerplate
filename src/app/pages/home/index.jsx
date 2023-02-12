@@ -4,6 +4,7 @@ import Description from '../../components/typography/Description';
 import Hyperlink from '../../components/typography/Hyperlink';
 import Subtitle from '../../components/typography/Subtitle';
 import Title from '../../components/typography/Title';
+import Donation from '../../components/ui/Donation';
 
 const List = styled.ul`
   margin: ${({ theme: { spacing } }) => `0 0 ${spacing.large}`};
@@ -54,6 +55,7 @@ const Home = () => {
         </Hyperlink>
         .
       </Description>
+      <Donation />
     </PageWrapper>
   );
 };
