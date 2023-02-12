@@ -3,8 +3,8 @@ import Hyperlink from '../typography/Hyperlink';
 import Subtitle from '../typography/Subtitle';
 
 const Image = styled.img`
-  height: 60px;
-  width: 217px;
+  width: 200px;
+  height: auto;
 `;
 
 const Donation = () => {
