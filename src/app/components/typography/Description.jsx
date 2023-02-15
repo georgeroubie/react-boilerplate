@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Wrapper = styled.p`
+const Wrapper = styled.div`
   font-size: ${({ theme: { fontSize } }) => fontSize.normal};
   font-weight: ${({ theme: { fontWeight } }) => fontWeight.normal};
   line-height: ${({ theme: { lineHeight } }) => lineHeight.normal};
