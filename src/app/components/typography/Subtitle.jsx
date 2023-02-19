@@ -8,12 +8,17 @@ const Wrapper = styled.h2`
   margin: 0 0 ${({ theme: { spacing } }) => spacing.normal};
 `;
 
-const Subtitle = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+const Subtitle = ({ className, children }) => {
+  return <Wrapper className={className}>{children}</Wrapper>;
 };
 
 Subtitle.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
+};
+
+Subtitle.defaultProps = {
+  className: '',
 };
 
 export default Subtitle;
