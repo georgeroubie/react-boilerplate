@@ -65,7 +65,7 @@ const Checkbox = ({ className, checked, label, disabled, onChange }) => {
     <Wrapper>
       <LabelContainer className={className} $disabled={disabled}>
         <Input disabled={disabled} checked={checked} onChange={onChangeHandler} />
-        <Icon>{checked ? <Icons type="Check" /> : <Icons type="Plus" />}</Icon>
+        <Icon>{checked && <Icons type="Check" />}</Icon>
         <Label>{label}</Label>
       </LabelContainer>
     </Wrapper>
