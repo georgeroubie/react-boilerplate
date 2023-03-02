@@ -23,8 +23,14 @@
 5. Change **name** and **version** here: `package.json`
 6. Change **port number**, **public url**, **title** and **description** here: `.env`
 7. Change these images:
-  - `public/logo192.png`
-  - `public/logo512.png`
+  - `public/android-chrome-192x192.png`
+  - `public/android-chrome-512x512.png`
+  - `public/apple-touch-icon.png`
+  - `public/favicon-16x16.png`
+  - `public/favicon-32x32.png`
   - `public/favicon.ico`
+  - `public/mstile-150x150.png`
+  - `public/safari-pinned-tab.svg`
+  - `public/share-to-social.png`
   - `src/assets/img/logo.svg`
 8. Delete this section and then commit the changes. **Happy coding!**
