@@ -8,12 +8,17 @@ const Wrapper = styled.h1`
   margin: 0 0 ${({ theme: { spacing } }) => spacing.xlarge};
 `;
 
-const Title = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+const Title = ({ className, children }) => {
+  return <Wrapper className={className}>{children}</Wrapper>;
 };
 
 Title.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
+};
+
+Title.defaultProps = {
+  className: '',
 };
 
 export default Title;
