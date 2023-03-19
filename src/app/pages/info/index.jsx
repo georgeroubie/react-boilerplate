@@ -5,6 +5,7 @@ import ButtonPresentation from './ButtonPresentation';
 import CheckboxPresentation from './CheckboxPresentation';
 import IconsPresentation from './IconsPresentation';
 import InputPresentation from './InputPresentation';
+import LottiePresentation from './LottiePresentation';
 
 const Info = () => {
   return (
@@ -18,6 +19,7 @@ const Info = () => {
       <Divider />
       <InputPresentation />
       <Divider />
+      <LottiePresentation />
     </PageWrapper>
   );
 };
