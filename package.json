@@ -1,70 +1,32 @@
 {
   "name": "react-boilerplate",
-  "version": "6.5.0",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
-    "lottie-web": "^5.10.2",
+    "lottie-web": "^5.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "6.4.2",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.3.6",
-    "styled-normalize": "^8.0.7"
+    "react-router-dom": "^6.14.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "lint": "eslint 'src/**/*.{js,jsx}'"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "plugins": [
-      "react"
-    ],
-    "rules": {
-      "react/function-component-definition": [
-        2,
-        {
-          "namedComponents": "arrow-function",
-          "unnamedComponents": "arrow-function"
-        }
-      ],
-      "react/jsx-no-useless-fragment": "error",
-      "react/prefer-stateless-function": "error",
-      "react/no-array-index-key": "off",
-      "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off",
-      "no-use-before-define": [
-        "error",
-        {
-          "functions": false
-        }
-      ],
-      "no-unused-vars": "error",
-      "prefer-const": "error",
-      "no-var": "error",
-      "no-undef": "error",
-      "no-param-reassign": "error",
-      "no-shadow": "error"
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "sass": "^1.64.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
   }
 }
