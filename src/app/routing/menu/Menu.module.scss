@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-large) 0;
+  gap: var(--spacing-normal);
+
+  a {
+    text-decoration: none;
+    color: var(--text-primary);
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.activeLink {
+  text-decoration: underline;
+}

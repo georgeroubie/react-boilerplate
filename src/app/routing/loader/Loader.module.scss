@@ -1,0 +1,17 @@
+@import './../../../styles/mixins.scss';
+@import './../../../styles/animations.scss';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 90px);
+
+  svg {
+    width: var(--font-size-large);
+
+    @include check-reduce-motion() {
+      animation: spin infinite 2s linear;
+    }
+  }
+}

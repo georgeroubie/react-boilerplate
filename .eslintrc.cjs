@@ -42,7 +42,6 @@ module.exports = {
         functions: false,
       },
     ],
-    'no-unused-vars': 'error',
     'prefer-const': 'error',
     'no-var': 'error',
     'no-undef': 'error',

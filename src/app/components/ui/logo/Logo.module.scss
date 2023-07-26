@@ -1,0 +1,11 @@
+@import './../../../../styles/mixins.scss';
+@import './../../../../styles/animations.scss';
+
+.image {
+  width: 60px;
+  cursor: pointer;
+
+  @include check-reduce-motion() {
+    animation: spin infinite 20s linear;
+  }
+}
