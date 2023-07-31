@@ -27,7 +27,7 @@
   &:focus,
   &:active {
     outline: 0;
-    box-shadow: 0 0 0 var(--spacing-normal) var(--outline);
+    box-shadow: 0 0 0 var(--spacing-small) var(--outline);
     text-decoration: none;
   }
 

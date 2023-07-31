@@ -13,7 +13,7 @@ type Props = {
   onChange: (value: string) => void;
 };
 
-const SelectInput = ({ className, id, selectedValue, options, children, onChange }: Props): React.ReactElement => {
+const SelectInput = ({ className = '', id, selectedValue, options, children, onChange }: Props): React.ReactElement => {
   function onChangeHandler({ target }: React.ChangeEvent<HTMLSelectElement>) {
     onChange(target.value);
   }

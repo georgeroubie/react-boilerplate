@@ -4,7 +4,7 @@ import Home from '../pages/home';
 import RoutingLoader from './loader';
 
 // Lazy load pages
-// const Info = lazy(() => import('../pages/info'));
+const Info = lazy(() => import('../pages/info'));
 // const Settings = lazy(() => import('../pages/settings'));
 const NotFound = lazy(() => import('./../pages/not-found'));
 
@@ -12,7 +12,7 @@ const Routing = (): React.ReactElement => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      {/* <Route
+      <Route
         path="/info"
         element={
           <RoutingLoader>
@@ -20,6 +20,7 @@ const Routing = (): React.ReactElement => {
           </RoutingLoader>
         }
       />
+      {/*
       <Route
         path="/settings"
         element={

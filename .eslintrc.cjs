@@ -46,6 +46,5 @@ module.exports = {
     'no-var': 'error',
     'no-undef': 'error',
     'no-param-reassign': 'error',
-    'no-shadow': 'error',
   },
 };
