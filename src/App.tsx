@@ -1,9 +1,9 @@
-import React from 'react';
-import AppWrapper from './app/components/layout/app-wrapper';
-import Routing from './app/routing/Routing';
-import Menu from './app/routing/menu/Menu';
+import AppWrapper from '@components/layout/app-wrapper';
+import Routing from '@routing/Routing';
+import Menu from '@routing/menu/Menu';
+import { ReactElement } from 'react';
 
-const App = (): React.ReactElement => {
+const App = (): ReactElement => {
   return (
     <AppWrapper>
       <Menu />

@@ -1,4 +1,4 @@
-import React from 'react';
+import { ChangeEvent, ReactElement, ReactNode } from 'react';
 import styles from './SelectInput.module.scss';
 
 type Props = {
@@ -9,12 +9,12 @@ type Props = {
     value: string;
     label: string;
   }[];
-  children: React.ReactNode;
+  children: ReactNode;
   onChange: (value: string) => void;
 };
 
-const SelectInput = ({ className = '', id, selectedValue, options, children, onChange }: Props): React.ReactElement => {
-  function onChangeHandler({ target }: React.ChangeEvent<HTMLSelectElement>) {
+const SelectInput = ({ className = '', id, selectedValue, options, children, onChange }: Props): ReactElement => {
+  function onChangeHandler({ target }: ChangeEvent<HTMLSelectElement>) {
     onChange(target.value);
   }
 

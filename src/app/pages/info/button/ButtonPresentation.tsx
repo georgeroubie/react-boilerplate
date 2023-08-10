@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import Subtitle from '../../../components/typography/subtitle';
-import Button from '../../../components/ui/button';
-import { ButtonSize, ButtonVariation } from '../../../components/ui/button/constants';
-import SelectInput from '../../../components/ui/select-input';
+import Subtitle from '@components/typography/subtitle';
+import Button from '@components/ui/button';
+import { ButtonSize, ButtonVariation } from '@components/ui/button/constants';
+import SelectInput from '@components/ui/select-input';
+import { ReactElement, useState } from 'react';
 import styles from './ButtonPresentation.module.scss';
 
-const ButtonPresentation = (): React.ReactElement => {
+const ButtonPresentation = (): ReactElement => {
   const [size, setSize] = useState('normal');
   const [variation, setVariation] = useState('primary');
   const [disabled, setDisabled] = useState('no');

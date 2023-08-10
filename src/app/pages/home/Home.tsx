@@ -1,13 +1,13 @@
-import React from 'react';
-import PageWrapper from '../../components/layout/page-wrapper';
-import Description from '../../components/typography/description';
-import Hyperlink from '../../components/typography/hyperlink';
-import Subtitle from '../../components/typography/subtitle';
-import Title from '../../components/typography/title';
-import Donation from '../../components/ui/donation';
+import PageWrapper from '@components/layout/page-wrapper';
+import Description from '@components/typography/description';
+import Hyperlink from '@components/typography/hyperlink';
+import Subtitle from '@components/typography/subtitle';
+import Title from '@components/typography/title';
+import Donation from '@components/ui/donation';
+import { ReactElement } from 'react';
 import styles from './Home.module.scss';
 
-const Home = (): React.ReactElement => {
+const Home = (): ReactElement => {
   return (
     <PageWrapper>
       <Title>React boilerplate</Title>

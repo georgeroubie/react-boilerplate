@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactElement } from 'react';
 import BaseIcon from './BaseIcon';
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   height?: string;
 };
 
-const SpinnerIcon = ({ className, width, height }: Props): React.ReactElement => (
+const SpinnerIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 512 512">
     <path
       fill="currentColor"

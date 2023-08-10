@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import { ReactElement, ReactNode, useEffect, useState } from 'react';
 import styles from './AppWrapper.module.scss';
 
 type Props = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 function getHeight() {
   return `${window.innerHeight}px`;
 }
 
-const AppWrapper = ({ children }: Props): React.ReactElement => {
+const AppWrapper = ({ children }: Props): ReactElement => {
   const [height, setHeight] = useState(getHeight());
 
   useEffect(() => {

@@ -1,10 +1,10 @@
-import React from 'react';
-import PageWrapper from '../../components/layout/page-wrapper';
-import Description from '../../components/typography/description';
-import Hyperlink from '../../components/typography/hyperlink';
-import Title from '../../components/typography/title';
+import PageWrapper from '@components/layout/page-wrapper';
+import Description from '@components/typography/description';
+import Hyperlink from '@components/typography/hyperlink';
+import Title from '@components/typography/title';
+import { ReactElement } from 'react';
 
-const NotFound = (): React.ReactElement => {
+const NotFound = (): ReactElement => {
   return (
     <PageWrapper>
       <Title>Oops :(</Title>

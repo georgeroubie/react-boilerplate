@@ -1,9 +1,9 @@
-import React from 'react';
-import Hyperlink from '../../typography/hyperlink/Hyperlink';
-import Subtitle from '../../typography/subtitle/Subtitle';
+import Hyperlink from '@components/typography/hyperlink/Hyperlink';
+import Subtitle from '@components/typography/subtitle/Subtitle';
+import { ReactElement } from 'react';
 import styles from './Donation.module.scss';
 
-const Donation = (): React.ReactElement => {
+const Donation = (): ReactElement => {
   return (
     <>
       <Subtitle>Donation</Subtitle>

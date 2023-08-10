@@ -1,14 +1,14 @@
-import React from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 type Props = {
   className?: string;
   viewBox: string;
   width?: string;
   height?: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
-const BaseIcon = ({ className = '', viewBox, width, height, children }: Props): React.ReactElement => {
+const BaseIcon = ({ className = '', viewBox, width, height, children }: Props): ReactElement => {
   return (
     <svg
       className={className}

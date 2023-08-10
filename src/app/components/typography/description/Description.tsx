@@ -1,12 +1,12 @@
-import React from 'react';
+import { ReactElement, ReactNode } from 'react';
 import styles from './Description.module.scss';
 
 type Props = {
   className?: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
-const Description = ({ className, children }: Props): React.ReactElement => {
+const Description = ({ className, children }: Props): ReactElement => {
   return <div className={`${styles.wrapper} ${className}`}>{children}</div>;
 };
 

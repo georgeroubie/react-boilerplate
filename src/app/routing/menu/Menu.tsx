@@ -1,5 +1,5 @@
+import Logo from '@components/ui/logo';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../components/ui/logo';
 import styles from './Menu.module.scss';
 
 const menuItems = [

@@ -1,12 +1,12 @@
-import React, { Suspense } from 'react';
-import SpinnerIcon from '../../components/icons/Spinner';
+import SpinnerIcon from '@components/icons/Spinner';
+import { ReactElement, ReactNode, Suspense } from 'react';
 import styles from './Loader.module.scss';
 
 type Props = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
-const RoutingLoader = ({ children }: Props): React.ReactElement => {
+const RoutingLoader = ({ children }: Props): ReactElement => {
   return (
     <Suspense
       fallback={

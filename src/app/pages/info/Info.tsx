@@ -1,19 +1,21 @@
-import React from 'react';
-import PageWrapper from '../../components/layout/page-wrapper';
-import Title from '../../components/typography/title';
+import PageWrapper from '@components/layout/page-wrapper';
+import Title from '@components/typography/title';
+import Divider from '@components/ui/divider/Divider';
+import { ReactElement } from 'react';
 import ButtonPresentation from './button';
-// import Divider from '../../components/ui/Divider';
+// import Divider from '@components/ui/Divider';
 // import CheckboxPresentation from './CheckboxPresentation';
 // import IconsPresentation from './IconsPresentation';
 // import InputPresentation from './InputPresentation';
 // import LottiePresentation from './LottiePresentation';
 
-const Info = (): React.ReactElement => {
+const Info = (): ReactElement => {
   return (
     <PageWrapper>
       <Title>Info</Title>
       <ButtonPresentation />
-      {/* <Divider />
+      <Divider />
+      {/*
       <IconsPresentation />
       <Divider />
       <CheckboxPresentation />
