@@ -46,5 +46,6 @@ module.exports = {
     'no-var': 'error',
     'no-undef': 'error',
     'no-param-reassign': 'error',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 };

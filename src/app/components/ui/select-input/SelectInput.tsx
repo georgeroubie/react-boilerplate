@@ -10,7 +10,7 @@ type Props = {
     label: string;
   }[];
   children: ReactNode;
-  onChange: (value: string) => void;
+  onChange: (value: any) => void;
 };
 
 const SelectInput = ({ className = '', id, selectedValue, options, children, onChange }: Props): ReactElement => {

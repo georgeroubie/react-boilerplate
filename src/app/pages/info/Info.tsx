@@ -3,9 +3,8 @@ import Title from '@components/typography/title';
 import Divider from '@components/ui/divider/Divider';
 import { ReactElement } from 'react';
 import ButtonPresentation from './button';
-// import Divider from '@components/ui/Divider';
+import IconsPresentation from './icons';
 // import CheckboxPresentation from './CheckboxPresentation';
-// import IconsPresentation from './IconsPresentation';
 // import InputPresentation from './InputPresentation';
 // import LottiePresentation from './LottiePresentation';
 
@@ -15,9 +14,9 @@ const Info = (): ReactElement => {
       <Title>Info</Title>
       <ButtonPresentation />
       <Divider />
-      {/*
       <IconsPresentation />
       <Divider />
+      {/*
       <CheckboxPresentation />
       <Divider />
       <InputPresentation />
