@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode;
 };
 
-const Description = ({ className, children }: Props): ReactElement => {
+const Description = ({ className = '', children }: Props): ReactElement => {
   return <div className={`${styles.wrapper} ${className}`}>{children}</div>;
 };
 

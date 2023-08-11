@@ -1,5 +1,5 @@
-import Subtitle from '../../components/typography/Subtitle';
-import Lottie from '../../components/ui/Lottie';
+import Subtitle from '@components/typography/subtitle';
+import Lottie from '@components/ui/lottie';
 
 const LottiePresentation = () => {
   return (

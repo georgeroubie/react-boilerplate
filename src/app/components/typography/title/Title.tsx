@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode;
 };
 
-const Title = ({ className, children }: Props): ReactElement => {
+const Title = ({ className = '', children }: Props): ReactElement => {
   return <h1 className={`${styles.title} ${className}`}>{children}</h1>;
 };
 

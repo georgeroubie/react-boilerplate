@@ -1,5 +1,5 @@
 import SpinnerIcon from '@components/icons/Spinner';
-import { MouseEvent, ReactElement, ReactNode } from 'react';
+import { ReactElement, MouseEvent as ReactMouseEvent, ReactNode } from 'react';
 import styles from './Button.module.scss';
 import { ButtonSize, ButtonType, ButtonVariation } from './constants';
 
@@ -11,7 +11,7 @@ type Props = {
   disabled?: boolean;
   isLoading?: boolean;
   children: ReactNode;
-  onClick?: (ev?: MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  onClick?: (ev?: ReactMouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 const Button = ({

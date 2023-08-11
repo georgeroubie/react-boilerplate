@@ -4,6 +4,7 @@ import Divider from '@components/ui/divider/Divider';
 import { ReactElement } from 'react';
 import ButtonPresentation from './button';
 import IconsPresentation from './icons';
+import LottiePresentation from './lottie';
 // import CheckboxPresentation from './CheckboxPresentation';
 // import InputPresentation from './InputPresentation';
 // import LottiePresentation from './LottiePresentation';
@@ -16,12 +17,12 @@ const Info = (): ReactElement => {
       <Divider />
       <IconsPresentation />
       <Divider />
+      <LottiePresentation />
+      <Divider />
       {/*
       <CheckboxPresentation />
       <Divider />
-      <InputPresentation />
-      <Divider />
-      <LottiePresentation /> */}
+      <InputPresentation />*/}
     </PageWrapper>
   );
 };

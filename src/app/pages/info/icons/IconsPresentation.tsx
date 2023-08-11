@@ -1,7 +1,7 @@
-import Icons, { IconListItem } from '@components/icons/Icons';
 import Subtitle from '@components/typography/subtitle';
 import SelectInput from '@components/ui/select-input';
 import { ReactElement, useState } from 'react';
+import Icons, { IconListItem } from './Icons';
 import styles from './IconsPresentation.module.scss';
 
 const IconsPresentation = (): ReactElement => {
