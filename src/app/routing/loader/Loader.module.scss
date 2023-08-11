@@ -1,5 +1,4 @@
 @import './../../../styles/mixins.scss';
-@import './../../../styles/animations.scss';
 
 .wrapper {
   display: flex;
@@ -10,7 +9,7 @@
   svg {
     width: var(--font-size-large);
 
-    @include check-reduce-motion() {
+    @include add-animation() {
       animation: spin infinite 2s linear;
     }
   }

@@ -1,5 +1,4 @@
 @import './../../../../styles/mixins.scss';
-@import './../../../../styles/animations.scss';
 
 .button {
   display: flex;
@@ -67,7 +66,7 @@
 .spinner {
   height: var(--line-height-normal);
 
-  @include check-reduce-motion() {
+  @include add-animation() {
     animation: spin infinite 2s linear;
   }
 }

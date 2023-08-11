@@ -3,3 +3,11 @@
     @content;
   }
 }
+
+@mixin add-animation() {
+  @include check-reduce-motion() {
+    :global {
+      @content;
+    }
+  }
+}
