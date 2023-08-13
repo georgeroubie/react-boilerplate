@@ -5,7 +5,6 @@ import styles from './Menu.module.scss';
 const menuItems = [
   { path: '/', label: 'Home' },
   { path: '/info', label: 'Info' },
-  { path: '/settings', label: 'Settings' },
 ];
 
 const Menu = () => {
