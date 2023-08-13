@@ -1,15 +1,8 @@
-import AppWrapper from '@components/layout/app-wrapper';
-import Routing from '@routing/Routing';
-import Menu from '@routing/menu/Menu';
+import AppRouter from '@routes/AppRouter';
 import { ReactElement } from 'react';
 
 const App = (): ReactElement => {
-  return (
-    <AppWrapper>
-      <Menu />
-      <Routing />
-    </AppWrapper>
-  );
+  return <AppRouter />;
 };
 
 export default App;

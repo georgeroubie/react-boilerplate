@@ -25,7 +25,7 @@
     "paths": {
       "@components/*": ["app/components/*"],
       "@pages/*": ["app/pages/*"],
-      "@routing/*": ["app/routing/*"],
+      "@routes/*": ["app/routes/*"],
       "@images/*": ["images/*"]
     }
   },
