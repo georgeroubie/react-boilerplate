@@ -3,11 +3,9 @@ import Title from '@components/typography/title';
 import Divider from '@components/ui/divider/Divider';
 import { ReactElement } from 'react';
 import ButtonPresentation from './button';
+import CheckboxPresentation from './checkbox';
 import IconsPresentation from './icons';
 import LottiePresentation from './lottie';
-// import CheckboxPresentation from './CheckboxPresentation';
-// import InputPresentation from './InputPresentation';
-// import LottiePresentation from './LottiePresentation';
 
 const Info = (): ReactElement => {
   return (
@@ -19,9 +17,9 @@ const Info = (): ReactElement => {
       <Divider />
       <LottiePresentation />
       <Divider />
-      {/*
       <CheckboxPresentation />
       <Divider />
+      {/*
       <InputPresentation />*/}
     </PageWrapper>
   );
