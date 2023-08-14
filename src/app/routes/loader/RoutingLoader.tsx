@@ -1,6 +1,6 @@
 import SpinnerIcon from '@components/icons/Spinner';
 import { ReactElement, ReactNode, Suspense } from 'react';
-import styles from './Loader.module.scss';
+import styles from './RoutingLoader.module.scss';
 
 type Props = {
   children: ReactNode;
