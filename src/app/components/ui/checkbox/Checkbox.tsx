@@ -1,4 +1,5 @@
 import CheckIcon from '@components/icons/Check';
+import c from 'clsx';
 import { ChangeEvent, ReactElement } from 'react';
 import styles from './Checkbox.module.scss';
 
@@ -10,14 +11,14 @@ type Props = {
   onChange?: (checked: boolean, event?: ChangeEvent<HTMLInputElement>) => void;
 };
 
-const Checkbox = ({ className = '', checked, label, disabled = false, onChange }: Props): ReactElement => {
+const Checkbox = ({ className, checked, label, disabled = false, onChange }: Props): ReactElement => {
   function onChangeHandler(e: ChangeEvent<HTMLInputElement>) {
     onChange?.(e.target.checked, e);
   }
 
   return (
     <div className={styles.wrapper}>
-      <label className={`${styles.labelContainer} ${disabled ? styles.disabled : ''} ${className}`}>
+      <label className={c(styles.labelContainer, disabled && styles.disabled, className)}>
         <input
           type="checkbox"
           className={styles.input}

@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 
+import c from 'clsx';
 import LottiePlayer from 'lottie-web';
 import { ReactElement, useEffect, useRef, useState } from 'react';
 import styles from './Lottie.module.scss';
@@ -21,7 +22,7 @@ type Props = {
 };
 
 const Lottie = ({
-  className = '',
+  className,
   name,
   speed,
   width,
@@ -79,7 +80,7 @@ const Lottie = ({
   return (
     <div
       ref={ref}
-      className={`${centered ? styles.centered : ''} ${className}`}
+      className={c(centered && styles.centered, className)}
       style={{
         height: height + 'px',
         width: width + 'px',

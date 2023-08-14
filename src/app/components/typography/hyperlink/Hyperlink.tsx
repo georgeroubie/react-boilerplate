@@ -1,3 +1,4 @@
+import c from 'clsx';
 import { ReactElement, ReactNode } from 'react';
 import styles from './Hyperlink.module.scss';
 
@@ -8,9 +9,9 @@ type Props = {
   rel?: string;
   children: ReactNode;
 };
-const Hyperlink = ({ className = '', href, target, rel = 'noreferrer', children }: Props): ReactElement => {
+const Hyperlink = ({ className, href, target, rel = 'noreferrer', children }: Props): ReactElement => {
   return (
-    <a className={`${styles.link} ${className}`} href={href} target={target} rel={rel}>
+    <a className={c(styles.link, className)} href={href} target={target} rel={rel}>
       {children}
     </a>
   );

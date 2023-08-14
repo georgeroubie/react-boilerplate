@@ -1,4 +1,5 @@
 import SpinnerIcon from '@components/icons/Spinner';
+import c from 'clsx';
 import { ReactElement, MouseEvent as ReactMouseEvent, ReactNode } from 'react';
 import styles from './Button.module.scss';
 import { ButtonSize, ButtonType, ButtonVariation } from './constants';
@@ -15,7 +16,7 @@ type Props = {
 };
 
 const Button = ({
-  className = '',
+  className,
   type = ButtonType.Button,
   variation,
   disabled = false,
@@ -24,12 +25,13 @@ const Button = ({
   children,
   onClick,
 }: Props): ReactElement => {
-  const sizeClassName = size && styles[size] ? styles[size] : '';
-  const variationClassName = variation && styles[variation] ? styles[variation] : '';
-  const computedClassName = `${styles.button} ${sizeClassName} ${variationClassName} ${className}`.trim();
-
   return (
-    <button className={computedClassName} type={type} disabled={disabled} onClick={onClick}>
+    <button
+      className={c(styles.button, size && styles[size], variation && styles[variation], className)}
+      type={type}
+      disabled={disabled}
+      onClick={onClick}
+    >
       {isLoading ? <SpinnerIcon className={styles.spinner} /> : <span className={styles.label}>{children}</span>}
     </button>
   );

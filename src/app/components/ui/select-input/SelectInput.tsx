@@ -1,3 +1,4 @@
+import c from 'clsx';
 import { ChangeEvent, ReactElement, ReactNode } from 'react';
 import styles from './SelectInput.module.scss';
 
@@ -13,13 +14,13 @@ type Props = {
   onChange: (value: any) => void;
 };
 
-const SelectInput = ({ className = '', id, selectedValue, options, children, onChange }: Props): ReactElement => {
+const SelectInput = ({ className, id, selectedValue, options, children, onChange }: Props): ReactElement => {
   function onChangeHandler({ target }: ChangeEvent<HTMLSelectElement>) {
     onChange(target.value);
   }
 
   return (
-    <div className={`${styles.wrapper} ${className}`}>
+    <div className={c(styles.wrapper, className)}>
       <label className={styles.label} htmlFor={id}>
         {children}
       </label>
