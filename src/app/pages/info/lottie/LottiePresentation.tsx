@@ -1,7 +1,8 @@
 import Subtitle from '@components/typography/subtitle';
 import Lottie from '@components/ui/lottie';
+import { ReactElement } from 'react';
 
-const LottiePresentation = () => {
+const LottiePresentation = (): ReactElement => {
   return (
     <>
       <Subtitle>Lottie component</Subtitle>

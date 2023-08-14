@@ -1,19 +1,12 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Subtitle from '../../components/typography/Subtitle';
-import Input from '../../components/ui/Input';
-import SelectInput from '../../components/ui/SelectInput';
+import Subtitle from '@components/typography/subtitle';
+import Input from '@components/ui/input';
+import { InputState } from '@components/ui/input/constants';
+import SelectInput from '@components/ui/select-input';
+import { ReactElement, useState } from 'react';
+import styles from './InputPresentation.module.scss';
 
-const Controls = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: ${({ theme: { spacing } }) => spacing.large};
-  margin-bottom: ${({ theme: { spacing } }) => spacing.large};
-`;
-
-const InputPresentation = () => {
-  const [state, setState] = useState('default');
+const InputPresentation = (): ReactElement => {
+  const [state, setState] = useState<InputState>(InputState.default);
   const [disabled, setDisabled] = useState('no');
   const [value, setValue] = useState('');
 
@@ -30,15 +23,15 @@ const InputPresentation = () => {
 
   const stateOptions = [
     {
-      value: 'default',
+      value: InputState.default,
       label: 'Default',
     },
     {
-      value: 'success',
+      value: InputState.success,
       label: 'Success',
     },
     {
-      value: 'error',
+      value: InputState.error,
       label: 'Error',
     },
   ];
@@ -46,20 +39,28 @@ const InputPresentation = () => {
   return (
     <>
       <Subtitle>Input component</Subtitle>
-      <Controls>
+      <div className={styles.controls}>
         <SelectInput id="disabled" selectedValue={disabled} options={booleanOptions} onChange={setDisabled}>
           Disabled:
         </SelectInput>
         <SelectInput id="state" selectedValue={state} options={stateOptions} onChange={setState}>
           State:
         </SelectInput>
-      </Controls>
+      </div>
       <Input
         value={value}
-        onChange={(e) => setValue(e.target.value)}
         label="Input with label"
         state={state}
         disabled={disabled === 'yes'}
+        onChange={(e) => setValue(e.target.value)}
+      />
+      <br />
+      <Input
+        value={value}
+        placeholder="Input with placeholder"
+        state={state}
+        disabled={disabled === 'yes'}
+        onChange={(e) => setValue(e.target.value)}
       />
     </>
   );

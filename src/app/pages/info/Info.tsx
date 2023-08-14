@@ -5,6 +5,7 @@ import { ReactElement } from 'react';
 import ButtonPresentation from './button';
 import CheckboxPresentation from './checkbox';
 import IconsPresentation from './icons';
+import InputPresentation from './input';
 import LottiePresentation from './lottie';
 
 const Info = (): ReactElement => {
@@ -19,6 +20,7 @@ const Info = (): ReactElement => {
       <Divider />
       <CheckboxPresentation />
       <Divider />
+      <InputPresentation />
       {/*
       <InputPresentation />*/}
     </PageWrapper>
