@@ -16,7 +16,7 @@ const IconsPresentation = (): ReactElement => {
 
   return (
     <>
-      <Subtitle>Available icons</Subtitle>
+      <Subtitle>Icons</Subtitle>
       <div className={styles.controls}>
         <SelectInput id="icon-type" selectedValue={iconType} options={iconsOptions} onChange={setIconType}>
           Icon type:

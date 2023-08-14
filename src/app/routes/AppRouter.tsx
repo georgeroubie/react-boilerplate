@@ -5,7 +5,7 @@ import RoutingLoader from './loader';
 import AppRoutesWrapper from './wrapper';
 
 // Lazy load pages
-const Info = lazy(() => import('@pages/info'));
+const ComponentsPresentation = lazy(() => import('@pages/components-presentation'));
 const NotFound = lazy(() => import('@pages/not-found'));
 
 const Routing = (): ReactElement => {
@@ -15,10 +15,10 @@ const Routing = (): ReactElement => {
         <Route element={<AppRoutesWrapper />}>
           <Route path="/" element={<Home />} />
           <Route
-            path="/info"
+            path="/components-presentation"
             element={
               <RoutingLoader>
-                <Info />
+                <ComponentsPresentation />
               </RoutingLoader>
             }
           />

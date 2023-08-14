@@ -4,7 +4,7 @@ import styles from './Menu.module.scss';
 
 const menuItems = [
   { path: '/', label: 'Home' },
-  { path: '/info', label: 'Info' },
+  { path: '/components-presentation', label: 'Available components' },
 ];
 
 const Menu = () => {

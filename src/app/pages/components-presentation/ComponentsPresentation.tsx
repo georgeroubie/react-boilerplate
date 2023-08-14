@@ -8,23 +8,21 @@ import IconsPresentation from './icons';
 import InputPresentation from './input';
 import LottiePresentation from './lottie';
 
-const Info = (): ReactElement => {
+const ComponentsPresentation = (): ReactElement => {
   return (
     <PageWrapper>
-      <Title>Info</Title>
-      <ButtonPresentation />
-      <Divider />
+      <Title>Available components</Title>
       <IconsPresentation />
       <Divider />
-      <LottiePresentation />
+      <ButtonPresentation />
       <Divider />
       <CheckboxPresentation />
       <Divider />
       <InputPresentation />
-      {/*
-      <InputPresentation />*/}
+      <Divider />
+      <LottiePresentation />
     </PageWrapper>
   );
 };
 
-export default Info;
+export default ComponentsPresentation;
