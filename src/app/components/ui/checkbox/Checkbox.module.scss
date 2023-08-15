@@ -45,6 +45,11 @@
   width: var(--font-size-large);
   height: var(--font-size-large);
 
+  svg {
+    width: var(--font-size-large);
+    height: var(--font-size-large);
+  }
+
   & + span {
     margin-left: var(--spacing-normal);
   }
