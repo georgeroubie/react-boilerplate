@@ -23,6 +23,6 @@
 1. Download project, rename project folder and open project folder with VSCode.
 2. Change **name** and **version** here: `package.json`
 3. Change application info here: `.env`
-4. Replace this image `public/favicon.svg` with you logo. It must be at lease `512x512` and `SVG`.
+4. Replace this image `public/favicon.svg` with your logo. It must be at lease `512x512` and `SVG`.
 5. Run `yarn generate-pwa-assets` in order to generate the new favicons.
 6. Delete this section. **Happy coding!**

@@ -18,15 +18,21 @@ const Home = (): ReactElement => {
       </Description>
       <ul className={styles.list}>
         <li>Folder structure based on some best practices</li>
-        <li>State management with zustand</li>
+        <li>PWA features (favicon multiple devices, service worker etc)</li>
+        <li>Social media meta tags</li>
         <li>CSS Modules</li>
         <li>Light/Dark Theme</li>
         <li>Routing with React Router</li>
-        <li>Basic Icons</li>
+        <li>Basic Icon Components</li>
         <li>Basic UI Components</li>
+        <li>
+          <Hyperlink href="https://lottiefiles.com" target="_blank">
+            Lottie
+          </Hyperlink>
+          &nbsp; Animations
+        </li>
         <li>ESLint</li>
         <li>Prettier</li>
-        <li>Testing</li>
       </ul>
       <Subtitle>Creator</Subtitle>
       <Description>
