@@ -1,7 +1,11 @@
+/// <reference types="vitest" />
+/// <reference types="vite/client" />
+
 import react from '@vitejs/plugin-react';
-import { defineConfig, loadEnv } from 'vite';
+import { loadEnv } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from 'vitest/config';
 
 export default ({ mode }) => {
   const env = { ...process.env, ...loadEnv(mode, process.cwd()) };
@@ -57,5 +61,11 @@ export default ({ mode }) => {
         },
       }),
     ],
+    test: {
+      globals: true,
+      environment: 'jsdom',
+      include: ['**/*.test.tsx', '**/*.test.ts'],
+      setupFiles: './src/test/setup.ts',
+    },
   });
 };

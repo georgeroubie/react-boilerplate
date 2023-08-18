@@ -26,8 +26,12 @@
       "@components/*": ["app/components/*"],
       "@pages/*": ["app/pages/*"],
       "@routes/*": ["app/routes/*"],
-      "@images/*": ["images/*"]
-    }
+      "@images/*": ["images/*"],
+      "@utils/*": ["utils/*"]
+    },
+
+    /* Types */
+    "types": ["vitest/globals"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

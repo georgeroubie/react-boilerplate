@@ -22,6 +22,7 @@ const Home = (): ReactElement => {
         <li>Social media meta tags</li>
         <li>CSS Modules</li>
         <li>Light/Dark Theme</li>
+        <li>TypeScript</li>
         <li>Routing with React Router</li>
         <li>Basic Icon Components</li>
         <li>Basic UI Components</li>
@@ -33,6 +34,7 @@ const Home = (): ReactElement => {
         </li>
         <li>ESLint</li>
         <li>Prettier</li>
+        <li>Testing with Vitest</li>
       </ul>
       <Subtitle>Creator</Subtitle>
       <Description>
