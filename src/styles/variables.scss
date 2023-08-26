@@ -1,0 +1,118 @@
+// Base
+:root {
+  --spacing-xsmall: 0.125rem;
+  --spacing-small: 0.25rem;
+  --spacing-normal: 0.5rem;
+  --spacing-large: 1rem;
+  --spacing-xlarge: 1.5rem;
+
+  --font-size-xsmall: 0.7rem;
+  --font-size-small: 0.85rem;
+  --font-size-normal: 1rem;
+  --font-size-large: 1.5rem;
+  --font-size-xlarge: 2rem;
+
+  --line-height-xsmall: 0.85rem;
+  --line-height-small: 1rem;
+  --line-height-normal: 1.2rem;
+  --line-height-large: 1.8rem;
+  --line-height-xlarge: 2.4rem;
+
+  --font-weight-thin: 100;
+  --font-weight-extraLight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semiBold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+  --font-weight-extra-black: 950;
+
+  --shape-rectangle: 0px;
+  --shape-rounded: 8px;
+  --shape-circle: 50%;
+  --shape-divider: 0.125rem;
+}
+
+// Light theme
+$lightThemeBlue: #266dd3;
+$lightThemeBlueLight: #e1f2ff;
+$lightThemeGreen: #00bc8b;
+$lightThemeGreenLight: #edf7ee;
+$lightThemeYellow: #ffc200;
+$lightThemeYellowLight: #fffcdc;
+$lightThemeRed: #ed2e2e;
+$lightThemeRedLight: #fff5f3;
+$lightThemeBlack: #333333;
+$lightThemeGrey: #9b9b9b;
+$lightThemeGreyLight: #dfdfdf;
+$lightThemeGreyLighter: #f7f7f7;
+$lightThemeWhite: #ffffff;
+
+:root {
+  --background: #{$lightThemeGreyLighter};
+  --background-secondary: #{$lightThemeGreyLight};
+  --surface: #{$lightThemeWhite};
+  --surface-secondary: #{$lightThemeBlack};
+  --success-primary: #{$lightThemeGreen};
+  --success-secondary: #{$lightThemeGreenLight};
+  --warning-primary: #{$lightThemeYellow};
+  --warning-secondary: #{$lightThemeYellowLight};
+  --error-primary: #{$lightThemeRed};
+  --error-secondary: #{$lightThemeRedLight};
+  --button-primary: #{$lightThemeYellow};
+  --button-primary-text: #{$lightThemeBlack};
+  --button-secondary: #{$lightThemeGreyLighter};
+  --button-secondary-text: #{$lightThemeBlack};
+  --text-primary: #{$lightThemeBlack};
+  --text-secondary: #{$lightThemeGrey};
+  --text-disabled: #{$lightThemeGreyLight};
+  --border-primary: #{$lightThemeGreyLight};
+  --border-secondary: #{$lightThemeGrey};
+  --outline: #{$lightThemeYellowLight};
+  --backdrop: #{$lightThemeBlack};
+  --divider-primary: #{$lightThemeGreyLighter};
+}
+
+// Dark theme
+$darkThemeBlue: #4cc0f0;
+$darkThemeBlueLight: #e1f2ff;
+$darkThemeGreen: #00bc8b;
+$darkThemeGreenLight: #edf7ee;
+$darkThemeYellow: #ffc200;
+$darkThemeYellowLight: #fffcdc;
+$darkThemeRed: #ff606a;
+$darkThemeRedLight: #fff5f3;
+$darkThemeBlack: #171717;
+$darkThemeBlackLight: #212121;
+$darkThemeBlackLightest: #353535;
+$darkThemeGrey: #9b9b9b;
+$darkThemeGreyLighter: #dfdfdf;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #{$darkThemeBlack};
+    --background-secondary: #{$darkThemeGreyLighter};
+    --surface: #{$darkThemeBlackLight};
+    --surface-secondary: #{$darkThemeGreyLighter};
+    --success-primary: #{$darkThemeGreen};
+    --success-secondary: #{$darkThemeGreenLight};
+    --warning-primary: #{$darkThemeYellow};
+    --warning-secondary: #{$darkThemeYellowLight};
+    --error-primary: #{$darkThemeRed};
+    --error-secondary: #{$darkThemeRedLight};
+    --button-primary: #{$darkThemeGreen};
+    --button-primary-text: #{$darkThemeBlack};
+    --button-secondary: #{$darkThemeBlackLightest};
+    --button-secondary-text: #{$darkThemeGreyLighter};
+    --text-primary: #{$darkThemeGreyLighter};
+    --text-secondary: #{$darkThemeGrey};
+    --text-disabled: #{$darkThemeBlackLightest};
+    --border-primary: #{$darkThemeGreyLighter};
+    --border-secondary: #{$darkThemeGrey};
+    --outline: #{$darkThemeGreyLighter};
+    --backdrop: #{$darkThemeBlack};
+    --divider-primary: #{$darkThemeGreyLighter};
+  }
+}

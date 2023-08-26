@@ -1,0 +1,13 @@
+@mixin check-reduce-motion() {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}
+
+@mixin add-animation() {
+  @include check-reduce-motion() {
+    :global {
+      @content;
+    }
+  }
+}
