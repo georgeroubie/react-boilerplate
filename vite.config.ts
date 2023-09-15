@@ -15,6 +15,7 @@ export default ({ mode }) => {
       tsconfigPaths(),
       react(),
       VitePWA({
+        useCredentials: true,
         registerType: 'autoUpdate',
         includeAssets: [
           'favicon.ico',
@@ -27,6 +28,7 @@ export default ({ mode }) => {
         ],
         manifest: {
           id: env.npm_package_version,
+          lang: env.VITE_DEFAULT_LANGUAGE,
           start_url: '/',
           display: 'standalone',
           name: env.VITE_APP_NAME,
