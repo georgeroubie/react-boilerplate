@@ -2,14 +2,17 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 
+import useColorTheme from 'app/hooks/useColorTheme';
+import useReducedMotion from 'app/hooks/useReducedMotion';
 import c from 'clsx';
 import LottiePlayer from 'lottie-web';
 import { ReactElement, useEffect, useRef, useState } from 'react';
 import styles from './Lottie.module.scss';
+import { LottieAnimations } from './constants';
 
 type Props = {
   className?: string;
-  name: string;
+  name: LottieAnimations;
   width: number;
   height: number;
   speed?: number;
@@ -38,6 +41,10 @@ const Lottie = ({
   const lottie = useRef<any>(null);
   const [isPlaying, setIsPlaying] = useState(autoplay);
 
+  const colorTheme = useColorTheme();
+
+  const reducedMotion = useReducedMotion();
+
   function onClick() {
     if (isPlaying) {
       return;
@@ -55,8 +62,8 @@ const Lottie = ({
       container: ref.current,
       renderer: 'svg',
       loop,
-      autoplay,
-      path: `/animations/${name}.json`,
+      autoplay: reducedMotion ? false : autoplay,
+      path: `/animations/${colorTheme}/${name}.json`,
     });
 
     lottie.current.onComplete = () => {
@@ -72,10 +79,14 @@ const Lottie = ({
       player.current = lottie.current;
     }
 
+    if (reducedMotion) {
+      lottie.current.stop();
+    }
+
     return () => {
       lottie.current && lottie.current.destroy();
     };
-  }, [autoplay, loop, name, player, speed, onComplete]);
+  }, [autoplay, loop, name, player, speed, colorTheme, reducedMotion, onComplete]);
 
   return (
     <div
