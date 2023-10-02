@@ -47,7 +47,7 @@ const Input = ({
       <div className={c(styles.container, Boolean(value) && styles.withValue, Boolean(label) && styles.withLabel)}>
         <input
           className={styles.input}
-          id={id}
+          id={id || name}
           value={value}
           disabled={disabled}
           name={name}
@@ -60,7 +60,11 @@ const Input = ({
           readOnly={readonly}
           onChange={onChange}
         />
-        {label && <label className={styles.label}>{label}</label>}
+        {label && (
+          <label className={styles.label} htmlFor={id || name}>
+            {label}
+          </label>
+        )}
       </div>
     </div>
   );
