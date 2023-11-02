@@ -1,3 +1,5 @@
+// Animations
+
 @mixin check-reduce-motion() {
   @media (prefers-reduced-motion: no-preference) {
     @content;
@@ -9,5 +11,30 @@
     :global {
       @content;
     }
+  }
+}
+
+// Media queries
+@mixin min-tablet-small($device: 'screen') {
+  @media only #{$device} and (min-width: var(--screen-size-tablet-small)) {
+    @content;
+  }
+}
+
+@mixin min-tablet-large($device: 'screen') {
+  @media only #{$device} and (min-width: var(--screen-size-tablet-large)) {
+    @content;
+  }
+}
+
+@mixin min-desktop-small($device: 'screen') {
+  @media only #{$device} and (min-width: var(--screen-size-desktop-small)) {
+    @content;
+  }
+}
+
+@mixin min-desktop-large($device: 'screen') {
+  @media only #{$device} and (min-width: var(--screen-size-desktop-large)) {
+    @content;
   }
 }
