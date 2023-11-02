@@ -55,6 +55,16 @@
   background-color: var(--button-secondary);
 }
 
+.info {
+  color: var(--button-info-text);
+  background-color: var(--button-info);
+}
+
+.error {
+  color: var(--button-error-text);
+  background-color: var(--button-error);
+}
+
 .label {
   overflow: hidden;
   white-space: nowrap;

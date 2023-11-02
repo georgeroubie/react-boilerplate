@@ -7,6 +7,8 @@ export enum ButtonType {
 export enum ButtonVariation {
   Primary = 'primary',
   Secondary = 'secondary',
+  Info = 'info',
+  Error = 'error',
 }
 
 export enum ButtonSize {

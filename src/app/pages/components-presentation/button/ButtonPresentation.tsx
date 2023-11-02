@@ -46,6 +46,14 @@ const ButtonPresentation = (): ReactElement => {
       value: 'secondary',
       label: 'Secondary',
     },
+    {
+      value: 'info',
+      label: 'Info',
+    },
+    {
+      value: 'error',
+      label: 'Error',
+    },
   ];
 
   return (

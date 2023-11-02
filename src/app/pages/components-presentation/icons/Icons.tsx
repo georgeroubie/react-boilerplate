@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import AngleDown from '@components/icons/AngleDown';
+import AngleDown from '@components/icons/AngleDownIcon';
 import AngleLeft from '@components/icons/AngleLeft';
 import AngleRight from '@components/icons/AngleRight';
 import AngleUp from '@components/icons/AngleUp';

@@ -33,6 +33,11 @@
   --shape-rounded: 8px;
   --shape-circle: 50%;
   --shape-divider: 0.125rem;
+
+  --screen-size-tablet-small: 640px;
+  --screen-size-tablet-large: 801px;
+  --screen-size-desktop-small: 1025px;
+  --screen-size-desktop-large: 1181px;
 }
 
 // Light theme
@@ -65,6 +70,10 @@ $lightThemeWhite: #ffffff;
   --button-primary-text: #{$lightThemeBlack};
   --button-secondary: #{$lightThemeGreyLighter};
   --button-secondary-text: #{$lightThemeBlack};
+  --button-info: #{$lightThemeBlue};
+  --button-info-text: #{$lightThemeWhite};
+  --button-error: #{$lightThemeRed};
+  --button-error-text: #{$lightThemeWhite};
   --text-primary: #{$lightThemeBlack};
   --text-secondary: #{$lightThemeGrey};
   --text-disabled: #{$lightThemeGreyLight};
@@ -106,6 +115,10 @@ $darkThemeGreyLighter: #dfdfdf;
     --button-primary-text: #{$darkThemeBlack};
     --button-secondary: #{$darkThemeBlackLightest};
     --button-secondary-text: #{$darkThemeGreyLighter};
+    --button-info: #{$darkThemeBlue};
+    --button-info-text: #{$darkThemeBlack};
+    --button-error: #{$darkThemeRed};
+    --button-error-text: #{$darkThemeBlack};
     --text-primary: #{$darkThemeGreyLighter};
     --text-secondary: #{$darkThemeGrey};
     --text-disabled: #{$darkThemeBlackLightest};
