@@ -11,6 +11,20 @@ export default ({ mode }) => {
   const env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   return defineConfig({
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return id.toString().split('node_modules/')[1].split('/')[0].toString();
+            }
+          },
+          entryFileNames: `[name].${env.npm_package_version}.js`,
+          chunkFileNames: `[name].${env.npm_package_version}.js`,
+          assetFileNames: `[name].${env.npm_package_version}.[ext]`,
+        },
+      },
+    },
     plugins: [
       tsconfigPaths(),
       react(),
