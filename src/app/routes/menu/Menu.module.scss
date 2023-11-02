@@ -2,7 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-large) 0;
+  background-color: var(--surface);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-large);
   gap: var(--spacing-normal);
 
   a {

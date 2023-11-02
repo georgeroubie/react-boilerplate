@@ -24,6 +24,7 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["app/components/*"],
+      "@layout-components": ["app/components/layout"],
       "@icons": ["app/components/icons"],
       "@pages/*": ["app/pages/*"],
       "@hooks": ["app/hooks"],

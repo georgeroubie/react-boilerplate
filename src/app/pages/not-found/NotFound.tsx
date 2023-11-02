@@ -1,7 +1,7 @@
-import PageWrapper from '@components/layout/page-wrapper';
 import Description from '@components/typography/description';
 import Hyperlink from '@components/typography/hyperlink';
 import Title from '@components/typography/title';
+import { PageWrapper } from '@layout-components';
 import { ReactElement } from 'react';
 
 const NotFound = (): ReactElement => {
