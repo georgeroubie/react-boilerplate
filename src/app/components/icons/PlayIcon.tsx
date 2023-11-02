@@ -7,7 +7,7 @@ type Props = {
   height?: string;
 };
 
-const Play = ({ className, width, height }: Props): ReactElement => (
+const PlayIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 448 512">
     <path
       fill="currentColor"
@@ -16,4 +16,4 @@ const Play = ({ className, width, height }: Props): ReactElement => (
   </BaseIcon>
 );
 
-export default Play;
+export default PlayIcon;

@@ -7,7 +7,7 @@ type Props = {
   height?: string;
 };
 
-const Bell = ({ className, width, height }: Props): ReactElement => (
+const BellIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 448 512">
     <path
       fill="currentColor"
@@ -16,4 +16,4 @@ const Bell = ({ className, width, height }: Props): ReactElement => (
   </BaseIcon>
 );
 
-export default Bell;
+export default BellIcon;

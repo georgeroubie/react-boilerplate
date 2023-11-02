@@ -2,12 +2,12 @@ import { ReactElement } from 'react';
 import BaseIcon from './BaseIcon';
 
 type Props = {
-  className?: string,
-  width?: string,
-  height?: string,
+  className?: string;
+  width?: string;
+  height?: string;
 };
 
-const User = ({ className, width, height }: Props): ReactElement => (
+const UserIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 448 512">
     <path
       fill="currentColor"
@@ -16,4 +16,4 @@ const User = ({ className, width, height }: Props): ReactElement => (
   </BaseIcon>
 );
 
-export default User;
+export default UserIcon;

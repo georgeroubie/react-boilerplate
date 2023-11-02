@@ -7,7 +7,7 @@ type Props = {
   height?: string;
 };
 
-const Magnifier = ({ className, width, height }: Props): ReactElement => (
+const MagnifierIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 512 512">
     <path
       fill="currentColor"
@@ -16,4 +16,4 @@ const Magnifier = ({ className, width, height }: Props): ReactElement => (
   </BaseIcon>
 );
 
-export default Magnifier;
+export default MagnifierIcon;

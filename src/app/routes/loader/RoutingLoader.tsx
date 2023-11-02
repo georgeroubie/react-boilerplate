@@ -1,4 +1,4 @@
-import SpinnerIcon from '@components/icons/Spinner';
+import { SpinnerIcon } from '@icons';
 import { ReactElement, ReactNode, Suspense } from 'react';
 import styles from './RoutingLoader.module.scss';
 

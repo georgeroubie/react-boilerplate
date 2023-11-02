@@ -7,7 +7,7 @@ type Props = {
   height?: string;
 };
 
-const AngleDown = ({ className, width, height }: Props): ReactElement => (
+const AngleDownIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 320 512">
     <path
       fill="currentColor"
@@ -16,4 +16,4 @@ const AngleDown = ({ className, width, height }: Props): ReactElement => (
   </BaseIcon>
 );
 
-export default AngleDown;
+export default AngleDownIcon;

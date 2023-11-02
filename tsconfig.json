@@ -24,6 +24,7 @@
     "baseUrl": "src",
     "paths": {
       "@components/*": ["app/components/*"],
+      "@icons": ["app/components/icons"],
       "@pages/*": ["app/pages/*"],
       "@hooks": ["app/hooks"],
       "@routes/*": ["app/routes/*"],

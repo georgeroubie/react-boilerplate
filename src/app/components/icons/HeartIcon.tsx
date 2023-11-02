@@ -7,7 +7,7 @@ type Props = {
   height?: string;
 };
 
-const Heart = ({ className, width, height }: Props): ReactElement => (
+const HeartIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 512 512">
     <path
       fill="currentColor"
@@ -16,4 +16,4 @@ const Heart = ({ className, width, height }: Props): ReactElement => (
   </BaseIcon>
 );
 
-export default Heart;
+export default HeartIcon;

@@ -7,7 +7,7 @@ type Props = {
   height?: string;
 };
 
-const Gear = ({ className, width, height }: Props): ReactElement => (
+const GearIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 512 512">
     <path
       fill="currentColor"
@@ -16,4 +16,4 @@ const Gear = ({ className, width, height }: Props): ReactElement => (
   </BaseIcon>
 );
 
-export default Gear;
+export default GearIcon;

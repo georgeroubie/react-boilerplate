@@ -7,7 +7,7 @@ type Props = {
   height?: string;
 };
 
-const Home = ({ className, width, height }: Props): ReactElement => (
+const HomeIcon = ({ className, width, height }: Props): ReactElement => (
   <BaseIcon className={className} width={width} height={height} viewBox="0 0 576 512">
     <path
       fill="currentColor"
@@ -16,4 +16,4 @@ const Home = ({ className, width, height }: Props): ReactElement => (
   </BaseIcon>
 );
 
-export default Home;
+export default HomeIcon;
