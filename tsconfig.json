@@ -25,6 +25,7 @@
     "paths": {
       "@components/*": ["app/components/*"],
       "@layout-components": ["app/components/layout"],
+      "@typography-components": ["app/components/typography"],
       "@icons": ["app/components/icons"],
       "@pages/*": ["app/pages/*"],
       "@hooks": ["app/hooks"],

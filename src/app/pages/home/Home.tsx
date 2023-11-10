@@ -1,9 +1,6 @@
-import Description from '@components/typography/description';
-import Hyperlink from '@components/typography/hyperlink';
-import Subtitle from '@components/typography/subtitle';
-import Title from '@components/typography/title';
 import Donation from '@components/ui/donation';
 import { PageWrapper } from '@layout-components';
+import { Description, Hyperlink, Subtitle, Title } from '@typography-components';
 import { ReactElement } from 'react';
 import styles from './Home.module.scss';
 

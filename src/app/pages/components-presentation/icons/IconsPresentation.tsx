@@ -1,4 +1,3 @@
-import Subtitle from '@components/typography/subtitle';
 import {
   AngleDownIcon,
   AngleLeftIcon,
@@ -21,6 +20,7 @@ import {
   TrashIcon,
   UserIcon,
 } from '@icons';
+import { Subtitle } from '@typography-components';
 import { ReactElement } from 'react';
 import styles from './IconsPresentation.module.scss';
 

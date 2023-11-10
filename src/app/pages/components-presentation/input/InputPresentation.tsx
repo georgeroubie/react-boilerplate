@@ -1,7 +1,7 @@
-import Subtitle from '@components/typography/subtitle';
 import Input from '@components/ui/input';
 import { InputState } from '@components/ui/input/constants';
 import SelectInput from '@components/ui/select-input';
+import { Subtitle } from '@typography-components';
 import { ReactElement, useState } from 'react';
 import styles from './InputPresentation.module.scss';
 

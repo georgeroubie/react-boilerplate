@@ -1,7 +1,7 @@
-import Subtitle from '@components/typography/subtitle';
 import Button from '@components/ui/button';
 import { ButtonSize, ButtonVariation } from '@components/ui/button/constants';
 import SelectInput from '@components/ui/select-input';
+import { Subtitle } from '@typography-components';
 import { ReactElement, useState } from 'react';
 import styles from './ButtonPresentation.module.scss';
 

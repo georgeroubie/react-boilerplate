@@ -1,6 +1,6 @@
-import Title from '@components/typography/title';
 import Divider from '@components/ui/divider/Divider';
 import { PageWrapper } from '@layout-components';
+import { Title } from '@typography-components';
 import { ReactElement } from 'react';
 import ButtonPresentation from './button';
 import CheckboxPresentation from './checkbox';

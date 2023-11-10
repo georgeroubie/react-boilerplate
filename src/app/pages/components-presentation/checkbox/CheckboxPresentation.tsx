@@ -1,5 +1,5 @@
-import Subtitle from '@components/typography/subtitle';
 import Checkbox from '@components/ui/checkbox';
+import { Subtitle } from '@typography-components';
 import { ReactElement, useMemo, useState } from 'react';
 import styles from './CheckboxPresentation.module.scss';
 
