@@ -35,7 +35,7 @@ const Lottie = ({
   centered = false,
   loop = true,
   autoplay = true,
-  rootMargin = '150px',
+  rootMargin = '250px',
   player,
   onPlay,
   onComplete,
