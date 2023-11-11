@@ -1,6 +1,6 @@
-import Donation from '@components/ui/donation';
 import { PageWrapper } from '@layout-components';
 import { Description, Hyperlink, Subtitle, Title } from '@typography-components';
+import { Donation } from '@ui-components';
 import { ReactElement } from 'react';
 import styles from './Home.module.scss';
 

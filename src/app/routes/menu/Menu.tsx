@@ -1,4 +1,4 @@
-import Logo from '@components/ui/logo';
+import { Logo } from '@ui-components';
 import { NavLink } from 'react-router-dom';
 import styles from './Menu.module.scss';
 
