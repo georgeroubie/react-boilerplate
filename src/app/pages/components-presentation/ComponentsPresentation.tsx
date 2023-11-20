@@ -4,6 +4,7 @@ import { Divider } from '@ui-components';
 import { ReactElement } from 'react';
 import ButtonPresentation from './button';
 import CheckboxPresentation from './checkbox';
+import DataTablePresentation from './data-table/DataTablePresentation';
 import IconsPresentation from './icons';
 import InputPresentation from './input';
 import LottiePresentation from './lottie';
@@ -11,7 +12,7 @@ import LottiePresentation from './lottie';
 const ComponentsPresentation = (): ReactElement => {
   return (
     <PageWrapper>
-      <Title>Available components</Title>
+      <Title pageTitle="Available components">Available components</Title>
       <IconsPresentation />
       <Divider />
       <ButtonPresentation />
@@ -21,6 +22,8 @@ const ComponentsPresentation = (): ReactElement => {
       <InputPresentation />
       <Divider />
       <LottiePresentation />
+      <Divider />
+      <DataTablePresentation />
     </PageWrapper>
   );
 };

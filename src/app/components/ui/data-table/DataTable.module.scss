@@ -17,10 +17,18 @@
   }
 
   th {
-    font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-bold);
   }
 
   thead {
     border-block-end: 1px solid var(--border-primary);
+  }
+
+  &.stripped {
+    tbody {
+      tr:nth-child(odd) {
+        background-color: var(--background);
+      }
+    }
   }
 }

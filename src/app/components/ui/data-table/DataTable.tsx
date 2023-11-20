@@ -4,13 +4,14 @@ import styles from './DataTable.module.scss';
 
 type DataTableProps = {
   className?: string;
+  stripped?: boolean;
   children?: ReactNode;
 };
 
-const DataTable = ({ className, children }: DataTableProps): ReactElement => {
+const DataTable = ({ className, stripped, children }: DataTableProps): ReactElement => {
   return (
     <div className={c(styles.wrapper, className)}>
-      <table className={styles.table}>{children}</table>
+      <table className={c(styles.table, stripped && styles.stripped)}>{children}</table>
     </div>
   );
 };
