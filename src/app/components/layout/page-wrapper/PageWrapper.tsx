@@ -10,11 +10,11 @@ type Props = {
 const PageWrapper = ({ children }: Props): ReactElement => {
   const location = useLocation();
 
-  useBodyHeight();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  useBodyHeight();
 
   return <div className={styles.wrapper}>{children}</div>;
 };
