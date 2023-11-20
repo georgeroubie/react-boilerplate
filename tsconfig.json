@@ -27,6 +27,7 @@
       "@layout-components": ["app/components/layout"],
       "@typography-components": ["app/components/typography"],
       "@ui-components": ["app/components/ui"],
+      "@helpers": ["app/helpers"],
       "@icons": ["app/components/icons"],
       "@pages/*": ["app/pages/*"],
       "@hooks": ["app/hooks"],
