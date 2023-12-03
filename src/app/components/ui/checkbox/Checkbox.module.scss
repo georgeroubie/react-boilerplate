@@ -51,12 +51,12 @@
   }
 
   & + span {
-    margin-left: var(--spacing-normal);
+    margin-inline-start: var(--spacing-normal);
   }
 }
 
 .label {
-  margin-left: var(--spacing-normal);
+  margin-inline-start: var(--spacing-normal);
   font-size: var(--font-size-normal);
   user-select: none;
 }

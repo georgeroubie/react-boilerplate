@@ -97,8 +97,8 @@
 
   .withLabel.withValue & {
     transform: translate(0, 4px);
-    margin-bottom: 0.3rem;
-    padding-bottom: 0;
+    margin-block-end: 0.3rem;
+    padding-block-end: 0;
   }
 
   &::placeholder {
