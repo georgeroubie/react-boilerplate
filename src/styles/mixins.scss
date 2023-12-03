@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 // Animations
 
 @mixin check-reduce-motion() {
@@ -16,25 +18,25 @@
 
 // Media queries
 @mixin min-tablet-small($device: 'screen') {
-  @media only #{$device} and (min-width: var(--screen-size-tablet-small)) {
+  @media only #{$device} and (min-width: $screen-size-tablet-small) {
     @content;
   }
 }
 
 @mixin min-tablet-large($device: 'screen') {
-  @media only #{$device} and (min-width: var(--screen-size-tablet-large)) {
+  @media only #{$device} and (min-width: $screen-size-tablet-large) {
     @content;
   }
 }
 
 @mixin min-desktop-small($device: 'screen') {
-  @media only #{$device} and (min-width: var(--screen-size-desktop-small)) {
+  @media only #{$device} and (min-width: $screen-size-desktop-small) {
     @content;
   }
 }
 
 @mixin min-desktop-large($device: 'screen') {
-  @media only #{$device} and (min-width: var(--screen-size-desktop-large)) {
+  @media only #{$device} and (min-width: $screen-size-desktop-large) {
     @content;
   }
 }
