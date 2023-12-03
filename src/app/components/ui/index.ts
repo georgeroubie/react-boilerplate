@@ -1,3 +1,5 @@
+export { default as Alert } from './alert';
+export * from './alert/constants';
 export { default as Button } from './button';
 export * from './button/constants';
 export { default as Checkbox } from './checkbox';

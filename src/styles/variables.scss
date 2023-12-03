@@ -84,6 +84,7 @@ $lightThemeWhite: #ffffff;
   --outline: #{$lightThemeYellowLight};
   --backdrop: #{$lightThemeBlack};
   --divider-primary: #{$lightThemeGreyLighter};
+  --box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1);
 }
 
 // Dark theme
@@ -129,5 +130,6 @@ $darkThemeGreyLighter: #dfdfdf;
     --outline: #{$darkThemeGreyLighter};
     --backdrop: #{$darkThemeBlack};
     --divider-primary: #{$darkThemeGreyLighter};
+    --box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
   }
 }
