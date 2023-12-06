@@ -2,6 +2,7 @@ export { default as Alert } from './alert';
 export * from './alert/constants';
 export { default as Button } from './button';
 export * from './button/constants';
+export { default as Card } from './card';
 export { default as Checkbox } from './checkbox';
 export { default as DataTable } from './data-table';
 export { default as Divider } from './divider';
