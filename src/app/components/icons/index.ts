@@ -2,6 +2,7 @@ export { default as AngleDownIcon } from './AngleDownIcon';
 export { default as AngleLeftIcon } from './AngleLeftIcon';
 export { default as AngleRightIcon } from './AngleRightIcon';
 export { default as AngleUpIcon } from './AngleUpIcon';
+export { default as BarsIcon } from './BarsIcon';
 export { default as BellIcon } from './BellIcon';
 export { default as CheckIcon } from './CheckIcon';
 export { default as CommentsIcon } from './CommentsIcon';
