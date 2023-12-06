@@ -2,6 +2,7 @@ import Home from '@pages/home';
 import { ReactElement, lazy } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import RoutingLoader from './loader';
+import { ROUTES } from './routes';
 import AppRoutesWrapper from './wrapper';
 
 // Lazy load pages
@@ -13,9 +14,9 @@ const Routing = (): ReactElement => {
     <BrowserRouter>
       <Routes>
         <Route element={<AppRoutesWrapper />}>
-          <Route path="/" element={<Home />} />
+          <Route path={ROUTES.HOME} element={<Home />} />
           <Route
-            path="/components-presentation"
+            path={ROUTES.COMPONENT_PRESENTATION}
             element={
               <RoutingLoader>
                 <ComponentsPresentation />
@@ -23,7 +24,7 @@ const Routing = (): ReactElement => {
             }
           />
           <Route
-            path="*"
+            path={ROUTES.NOT_FOUND}
             element={
               <RoutingLoader>
                 <NotFound />
