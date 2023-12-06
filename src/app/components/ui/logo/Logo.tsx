@@ -4,10 +4,22 @@ import { ReactElement } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Logo.module.scss';
 
-const Logo = (): ReactElement => {
+type LogoProps = {
+  onClick?: () => void;
+};
+
+const Logo = ({ onClick }: LogoProps): ReactElement => {
   const navigate = useNavigate();
 
-  return <img className={styles.image} src={logo} alt="logo" onClick={() => navigate(ROUTES.HOME)} />;
+  const handleOnClick = () => {
+    if (onClick) {
+      onClick();
+    } else {
+      navigate(ROUTES.HOME);
+    }
+  };
+
+  return <img className={styles.image} src={logo} alt="logo" onClick={handleOnClick} />;
 };
 
 export default Logo;
