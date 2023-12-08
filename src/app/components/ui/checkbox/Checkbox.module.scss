@@ -44,6 +44,7 @@
   border-radius: var(--spacing-xsmall);
   width: var(--font-size-large);
   height: var(--font-size-large);
+  flex-shrink: 0;
 
   svg {
     width: var(--font-size-large);
