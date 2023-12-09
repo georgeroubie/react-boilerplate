@@ -1,10 +1,11 @@
+import { ROUTES } from '@routes/routes';
 import { Logo } from '@ui-components';
 import { NavLink } from 'react-router-dom';
 import styles from './Menu.module.scss';
 
 const menuItems = [
-  { path: '/', label: 'Home' },
-  { path: '/components-presentation', label: 'Available components' },
+  { path: ROUTES.HOME, label: 'Home' },
+  { path: ROUTES.COMPONENT_PRESENTATION, label: 'Available components' },
 ];
 
 const Menu = () => {
