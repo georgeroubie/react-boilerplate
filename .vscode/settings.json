@@ -3,40 +3,13 @@
   "prettier.ignorePath": ".prettierignore",
   "eslint.format.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
+  "[javascript, javascriptreact, typescript, typescriptreact]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.organizeImports": true,
-      "source.sortMembers": true
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit",
+      "source.sortMembers": "explicit"
     }
   },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.organizeImports": true,
-      "source.sortMembers": true
-    }
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.organizeImports": true,
-      "source.sortMembers": true
-    }
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.organizeImports": true,
-      "source.sortMembers": true
-    }
-  }
 }
