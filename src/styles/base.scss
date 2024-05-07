@@ -9,6 +9,10 @@ body {
   background-color: var(--background);
 }
 
+body {
+  height: var(--app-height);
+}
+
 button {
   appearance: none;
   min-width: 0;

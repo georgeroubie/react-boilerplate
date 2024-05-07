@@ -7,7 +7,7 @@ function getHeight() {
 function useBodyHeight() {
   useEffect(() => {
     function changeHeightValue() {
-      document.body.style.height = getHeight();
+      document.documentElement.style.setProperty('--app-height', getHeight());
     }
 
     changeHeightValue();

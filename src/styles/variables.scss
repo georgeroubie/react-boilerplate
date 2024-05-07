@@ -1,10 +1,12 @@
 // Base
 $screen-size-tablet-small: 640px;
-$screen-size-tablet-large: 801px;
-$screen-size-desktop-small: 1025px;
-$screen-size-desktop-large: 1181px;
+$screen-size-tablet-large: 800px;
+$screen-size-desktop-small: 1024px;
+$screen-size-desktop-large: 1180px;
 
 :root {
+  --app-height: 100vh;
+
   --spacing-xsmall: 0.125rem;
   --spacing-small: 0.25rem;
   --spacing-normal: 0.5rem;
