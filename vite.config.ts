@@ -7,6 +7,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
 
+import sitemapPlugin from 'vite-plugin-sitemap';
+
 export default ({ mode }) => {
   const env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
@@ -28,6 +30,17 @@ export default ({ mode }) => {
     plugins: [
       tsconfigPaths(),
       react(),
+      sitemapPlugin({
+        hostname: env.VITE_PUBLIC_URL,
+        dynamicRoutes: JSON.parse(env.VITE_SITEMAP_URLS),
+        robots: [
+          {
+            userAgent: '*',
+            allow: JSON.parse(env.VITE_ALLOW_ROBOTS_URLS),
+            disallow: JSON.parse(env.VITE_DISALLOW_ROBOTS_URLS),
+          },
+        ],
+      }),
       VitePWA({
         useCredentials: true,
         registerType: 'autoUpdate',

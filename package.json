@@ -1,5 +1,5 @@
 {
-  "version": "8.0.1",
+  "version": "8.1.0",
   "name": "react-boilerplate",
   "private": true,
   "type": "module",
@@ -18,7 +18,8 @@
     "lottie-web": "^5.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0"
+    "react-router-dom": "^6.15.0",
+    "vite-plugin-sitemap": "^0.6.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.0.1",
